@@ -5,16 +5,27 @@
     <title>Contato</title>
 </head>
 <body>
-    <img src="./Auxiliares/Logo_ProjetoIntegrador.png" height="200" widht="150"/>
-    <h2>Fale com a gente, deixe sua dúvida, sugestão ou reclamação!</h2>
+    <div>
+        <a id="sobreNos" href="sobreNos.html">Sobre Nós</a>
+        <a id="contato" href="contato.html">Contato</a>
+        <a id="acesso" href="acesso.html">Acesso</a>
+        <img id="home" src="./Auxiliares/Home.png" href="paginaInicial.html" height="40px" style="background-color:blue ;">
+        <!--obs.: Utilizado style apenas para que o ícone pudesse ser visualizado.-->
+    </div>
+        <img src="./Auxiliares/Logo_ProjetoIntegrador.png" height="200" widht="150"/>
+    <div>
+        <a>Fale com a gente, deixe sua dúvida, sugestão ou reclamação!</a>
+        <img id="LapisContato" src="./Auxiliares/LapisContato.png" href="paginaInicial.html" height="50" widht="150">
+    </div>
+
     <form>
     
-        <label for="nomeCompleto">Nome Completo</label>
-        <input type="text" id="nomeCompleto"><br>
-        <label for="email">E-mail</label>
-        <input type="text" id="email"><br>
-        <label for="assunto">Assunto</label>
-        <input type="text" id="assunto"><br>
+        <label for="nomeCompleto"></label>
+        <input type="text" id="nomeCompleto" value="Nome Completo"><br>
+        <label for="email"></label>
+        <input type="text" id="email" value="E-mail"><br>
+        <label for="assunto"></label>
+        <input type="text" id="assunto" value="Assunto"><br>
 
         <button id="btnSalvar">
             Salvar
@@ -24,4 +35,11 @@
         </button>
     </form>
 </body>
+<footer>
+    <div>
+        <a id="instagram" href="#">Instagram</a>
+        <a id="facebook" href="#">Facebook</a>
+        <a id="whatsapp" href="#">Whatsapp</a>
+    </div>
+</footer>
 </html>
