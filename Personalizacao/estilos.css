@@ -1,0 +1,144 @@
+*{
+    scroll-behavior: auto;
+}
+/*Personalização dos Cabeçalhos
+*/
+.divHeader{
+    display: flex;
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.ulHeader{
+    flex-direction: row;
+    margin: 1em;
+    padding: 0;
+}
+
+.lnkHeader{
+    margin-inline: 1em;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    text-decoration-line: none;
+}
+
+#hdLeft{
+    justify-content: flex-start;
+} 
+
+#hdRight{
+    justify-content: flex-end;
+}
+
+/*Personalização do logo e barra de pesquisa
+*/
+.divLogo{
+    padding-top: 3em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+
+#imgLogo{
+    width:25em;
+}
+
+.inptSearch{
+    font-family: Comic Sans MS;
+    font-size: small;
+    color: #F1BE2F;
+    font-weight: bold;
+    width: 45em;
+    height: 2em;
+    text-align: center;
+    border-color: #51006A;
+}
+
+#imgLupa{
+    width: 4%;
+    padding-left: 1em;
+    vertical-align: center;
+}
+
+/*Personalização do Corpo da Página
+*/
+.divBody{
+    font-family: Comic Sans MS;
+    font-size: small;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+
+/*Personalização do conteúdo principal da página
+*/
+.divMain{
+    font-family: Comic Sans MS;
+    font-size: small;
+    padding-top: 5em;
+    justify-content: space-around;
+}
+
+.navLnkOthers{
+    font-family: Comic Sans MS;
+    font-size: small;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.divLnkOthers{
+    margin-inline: 1em;
+    width: 15rem;
+    height: 10rem;
+    text-align: center;
+}
+
+.lnkOthers{
+    list-style-type: none;
+    color: #51006A;;
+    text-decoration-line: none;
+    font-size: small;
+}
+
+.imgPgInicial{
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+/* Personalização do Rodapé da página
+*/
+.divFooter{
+    padding: 0;
+    margin-top: 5em;
+    
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}
+
+.lnkFooter{
+    margin-inline: 1em;
+    list-style-type: none;
+    color: white;
+    text-decoration-line: none;
+}
