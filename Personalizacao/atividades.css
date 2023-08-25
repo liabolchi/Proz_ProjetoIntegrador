@@ -36,11 +36,11 @@
     background-color: #8FAADC;
 }
 
-.liDropDown{
+.liHeader{
     display: inline-block;
 }
   
-.liDropDown:hover .dropDownContent{
+.liHeader:hover .dropDownContent{
     display: block;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .dropDownContent .lnkHeader {
-    color: black;
+    color: #0C67D6;
     padding: 1em 1em;
     text-decoration: none;
     display: block;
@@ -62,8 +62,9 @@
 }
 
 .dropDownContent .lnkHeader:hover{
-    background-color: white;
+    background-color: #8FAADC;
 }
+
 .lnkBtn{
     display: inline-block;
     color: white;
