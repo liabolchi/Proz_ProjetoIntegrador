@@ -1,0 +1,163 @@
+*{
+    scroll-behavior: auto;
+}
+/*Personalização dos Cabeçalhos
+*/
+.divHeader{
+    display: flex;
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.ulHeader{
+    flex-direction: row;
+    margin: 1em;
+    padding: 0;
+}
+
+.lnkHeader{
+    margin-inline: 1em;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    text-decoration-line: none;
+}
+
+#hdLeft{
+    justify-content: flex-start;
+} 
+
+#hdRight{
+    justify-content: flex-end;
+}
+
+/*Personalização do logo e barra de pesquisa
+*/
+.divLogo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -1em;
+    margin-left: 25em;
+    margin-right: 5em;
+    align-items: center;
+}
+
+.searchBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 1.5em;
+}
+
+#imgLogo{
+    width:15em;
+}
+
+.inptSearch{
+    font-family: Comic Sans MS;
+    font-size: small;
+    color: #F1BE2F;
+    font-weight: bold;
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    border-color: #51006A;
+}
+
+#imgLupa{
+    width: 10%;
+    padding-left: 1em;
+    vertical-align: center;
+}
+
+/*Personalização do Corpo da Página
+*/
+.divBody{
+    font-family: Comic Sans MS;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+}
+
+/* Personalização SideMenu
+*/
+.divSideMenu{
+    /* background-image: url(../Auxiliares/Imagens/SideMenu.png);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    width: 16em;
+    border: #F1BE2F solid;
+    border-width: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+.ulSideMenu{
+    list-style-type:none;
+    color: #51006A;;
+    text-decoration-line: none;
+    font-size: small;
+    font-weight: bold;
+}
+
+.liSideMenu{
+    padding-top: 1em;
+    text-align:start;
+}
+
+
+/*Personalização do conteúdo principal da página
+*/
+.divConteudo{
+    width: 100%;
+    margin-left: 3em;
+    border: 1px solid;
+}
+ 
+.divFiltros{
+    border: 1px solid;
+}
+
+.divAtividades{
+
+}
+
+#navAtividades{
+
+    font-family: Comic Sans MS;
+    font-size: small;
+    padding-top: 1em;
+    justify-content: space-around;
+    border: 1px solid;
+}
+
+
+
+
+
+/* Personalização do Rodapé da página
+*/
+.divFooter{
+    padding: 0;
+    margin-top: 5em;
+    
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}
+
+.lnkFooter{
+    margin-inline: 1em;
+    list-style-type: none;
+    color: white;
+    text-decoration-line: none;
+}
