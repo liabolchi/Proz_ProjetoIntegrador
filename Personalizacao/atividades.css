@@ -109,35 +109,27 @@
     text-align:start;
 }
 
-
 /*Personalização do conteúdo principal da página
 */
 .divConteudo{
     width: 100%;
     margin-left: 3em;
-    border: 1px solid;
 }
- 
+
 .divFiltros{
-    border: 1px solid;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
 }
 
-.divAtividades{
-
-}
-
-#navAtividades{
-
+.navAtividades{
+    display: flex;
     font-family: Comic Sans MS;
     font-size: small;
     padding-top: 1em;
+    flex-direction: row;
     justify-content: space-around;
-    border: 1px solid;
 }
-
-
-
-
 
 /* Personalização do Rodapé da página
 */
