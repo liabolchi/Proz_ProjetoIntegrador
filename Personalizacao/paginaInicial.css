@@ -1,6 +1,7 @@
 *{
     scroll-behavior: auto;
 }
+
 /*Personalização dos Cabeçalhos
 */
 .divHeader{
@@ -12,18 +13,54 @@
 }
 
 .ulHeader{
+    display: flex;
     flex-direction: row;
     margin: 1em;
     padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0C67D6;
+
 }
 
 .lnkHeader{
     margin-inline: 1em;
-    padding: 0;
     list-style-type: none;
     color: white;
-    text-decoration-line: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
+
+.lnkHeader:hover, .liHeader:hover{
+    background-color: #8FAADC;
+}
+
+.liDropDown{
+    display: inline-block;
+}
+  
+.liDropDown:hover{
+    display: block;
+}
+
+.dropDownContent{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0C67D6(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropBtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-inline: 1em;
+}
+
 
 #hdLeft{
     justify-content: flex-start;
