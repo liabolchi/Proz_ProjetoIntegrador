@@ -22,15 +22,96 @@
     <link rel="stylesheet" href="./Personalizacao/paginaInicial.css" />
     <title>AtivaKids</title>
   </head>
-  <body>
-    <div>
-      <form action="./sobreNos.html">
-        <a id="sobreNos" href="./sobreNos.html" rel="next">Sobre Nós</a>
-        <a id="contato" href="./contato.html" rel="next">Contato</a>
-        <a id="acesso" href="./acesso.html" rel="next">Acesso</a>
-        <a id="inicio" href="./paginaInicial.html">Início</a>
-      </form>
+  <header>
+    <div class="divHeader">
+      <nav>
+        <ul id="hdLeft" class="ulHeader">
+          <li class="liHeader">
+            <a class="lnkBtn" href="./paginaInicial.html">Início</a>
+          </li>
+          <li class="liHeader">
+            <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
+          </li>
+          <li class="liHeader">
+            <a class="lnkBtn" href="./contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul id="hdRight" class="ulHeader">
+          <li class="liHeader">
+            <a class="lnkBtn" href="">Fórum</a>
+          </li>
+          <li class="liHeader">
+            <a class="lnkBtn" href="">Administrador</a>
+            <div class="dropDownContent">
+              <a class="lnkHeader" href="#">Atividades</a>
+              <a class="lnkHeader" href="#">Usuários</a>
+              <a class="lnkHeader" href="#">Juntos Para Brincar</a>
+              <a class="lnkHeader" href="#">Permissões</a>
+            </div>
+          </li>
+          <li class="liHeader">
+            <a class="lnkBtn" href="">Perfil</a>
+            <div class="dropDownContent">
+              <a class="lnkHeader" href="#">Meus Dados</a>
+              <a class="lnkHeader" href="#">Segurança</a>
+              <a class="lnkHeader" href="#">Atividades Favoritas</a>
+              <a class="lnkHeader" href="#">Meus Downloads</a>
+              <a class="lnkHeader" href="#">Juntos Para Brincar</a>
+            </div>
+          </li>
+          <li class="liHeader">
+            <a class="lnkBtn" href="">Acesso</a>
+            <div class="dropDownContent" class="divMenuAcesso">
+              <div class="divForm">
+                <form class="frmAcesso">
+                  <ul>
+                    <input
+                      class="inptAcesso"
+                      type="email"
+                      placeholder="e-Mail"
+                      required
+                    />
+                    <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
+                    <input
+                      class="inptAcesso"
+                      type="password"
+                      placeholder="senha"
+                      required
+                    />
+                    <li class="lnkRecAcesso" href="">Recuperar Senha</li>
+
+                    <a id="lnkNovoAcesso" class="lnkBtn" href=""
+                      >Novo Cadastro</a
+                    >
+
+                    <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
+    <div class="divLogo">
+      <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
+      <div class="searchBar">
+        <input
+          id="inptPesquisar"
+          class="inptSearch"
+          placeholder="O que vamos fazer hoje?"
+        />
+        <img
+          id="imgLupa"
+          src="./Auxiliares/Imagens/Lupa.png"
+          class="inptSearch"
+        />
+      </div>
+    </div>
+  </header>
+  <body>
     <h2>
       <img
         src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png"
@@ -86,10 +167,23 @@
     </h2>
   </body>
   <footer>
-    <div>
-      <a href="#" target="_blank" rel="external">Instagram</a>
-      <a href="#" target="_blank" rel="external">Facebook</a>
-      <a href="#" target="_blank" rel="external">WhatsApp</a>
+    <div class="divFooter">
+      <nav>
+        <ul class="ulFooter">
+          <li class="liFooter">
+            <a class="lnkBtn" href="#">Instagram</a>
+          </li>
+          <li class="liFooter">
+            <a class="lnkBtn" href="#">Facebook</a>
+          </li>
+          <li class="liFooter">
+            <a class="lnkBtn" href="#">Whatsapp</a>
+          </li>
+          <li class="liFooter">
+            <a class="lnkBtn" href="#">Juntos para Brincar</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </footer>
 </html>
