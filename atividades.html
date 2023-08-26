@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/atividades.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoPComBarra.css" />
     <title>AtivaKids</title>
   </head>
   <header>
@@ -63,8 +63,31 @@
           </li>
           <li class="liHeader">
             <a class="lnkBtn" href="">Acesso</a>
-            <div class="dropDownContent">
-              <a id="lnkAdm" class="lnkHeader" href="acesso.html"></a>
+            <div class="dropDownContent" class="divMenuAcesso">
+              <div class="divForm">
+                <form class="frmAcesso">
+                  <ul>
+                    <input
+                      class="inptAcesso"
+                      type="email"
+                      placeholder="e-Mail"
+                      required="true"
+                    />
+                    <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
+                    <input
+                      class="inptAcesso"
+                      type="password"
+                      placeholder="senha"
+                      required="true"
+                    />
+                    <li class="lnkRecAcesso" href="">Recuperar Senha</li>
+                    <a id="lnkNovoAcesso" class="lnkBtn" href=""
+                      >Novo Cadastro</a
+                    >
+                    <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
+                  </ul>
+                </form>
+              </div>
             </div>
           </li>
         </ul>

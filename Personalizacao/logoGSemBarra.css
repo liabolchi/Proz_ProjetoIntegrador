@@ -80,6 +80,7 @@
     width: 20em;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .inptAcesso{
@@ -131,38 +132,15 @@
 /*Personalização do logo e barra de pesquisa
 */
 .divLogo{
+    margin-top: -4em;
     padding-top: 3em;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.searchBar{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1.5em;
-}
-
 #imgLogo{
     width:25em;
-}
-
-.inptSearch{
-    font-family: Comic Sans MS;
-    font-size: small;
-    color: #F1BE2F;
-    font-weight: bold;
-    width: 45em;
-    height: 2em;
-    text-align: center;
-    border-color: #51006A;
-}
-
-#imgLupa{
-    width: 4%;
-    padding-left: 1em;
-    vertical-align: center;
 }
 
 /*Personalização do Corpo da Página
@@ -176,7 +154,6 @@
     padding-top: 5em;
     padding-bottom: 5em;
 }
-
 
 /*Personalização do conteúdo principal da página
 */
@@ -213,6 +190,111 @@
     width: 100%;
     height: 100%;
     margin-top: 2em;
+}
+
+.divPrincipal{
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+    margin-inline: 15em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divTexto{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.parDivTexto{
+    margin: 0;
+    padding:1em;
+    width: 50%;
+}
+
+.lblTexto{
+    font-family: Comic Sans MS;
+    font-size: medium;
+    color: #8FAADC 
+}
+
+#lblAtiva{
+    font-family: Luckiest Guy;
+    font-size: large;
+    color: #51006A;
+}
+
+#lblJuntos{
+    font-family: Carrotflower;
+    font-size: large;
+    color: #FF7065;
+    font-weight: bold;
+}
+
+.divFormCadastro{
+    padding: 0;
+    margin: 0;
+    font-family: Comic Sans MS;
+    font-size: large;
+    color: #0C67D6;
+    text-align: center;
+}
+
+.frmAcesso{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divSelect{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.inptCadastro{
+    margin: 1em;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    color: #0C67D6;
+    border-color: #F1BE2F;
+    border-style: solid;
+}
+
+.divSelect{
+    width: 30em;
+    font-family: Comic Sans MS;
+    color: #FF7065;
+    font-size: small;
+    font-weight: bold;
+    align-items: center;
+}
+
+.slctOpcao{
+    width: 100%;
+    height: 2em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    color: #0C67D6;
+    text-align: center;
+}
+
+#lnkBtnSalvar{
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    width: 50%;
+    height: 2em;
+    justify-content: center;
+    color: #0C67D6;
+    background-color:#F1BE2F;
+    font-weight: bold;
+    align-items: center;
 }
 
 /* Personalização do Rodapé da página

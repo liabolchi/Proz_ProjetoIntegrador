@@ -95,42 +95,75 @@
     </div>
     <div class="divLogo">
       <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
-      <!-- <div class="searchBar">
-        <input
-          id="inptPesquisar"
-          class="inptSearch"
-          placeholder="O que vamos fazer hoje?"
-        />
-        <img
-          id="imgLupa"
-          src="./Auxiliares/Imagens/Lupa.png"
-          class="inptSearch"
-        />
-      </div> -->
     </div>
   </header>
   <body>
-    <div>
-      <a>Fale com a gente, deixe sua dúvida, sugestão ou reclamação!</a>
-      <img
-        id="LapisContato"
-        src="./Auxiliares/Imagens/LapisContato.png"
-        height="50"
-        widht="150"
-      />
+    <div class="divPrincipal">
+      <div clas="divTexto">
+        <p class="parDivTexto">
+          <a class="lblTexto"
+            >O fórum é um dos benefícios que você poderá desfrutar ao se juntar
+            ao movimento
+          </a>
+          <a id="lblAtiva">AtivaKids</a>
+        </p>
+        <p class="parDivTexto">
+          <a class="lblTexto"
+            >Venha fazer parte de uma comunidade e trocar experiências com
+            outros tutores que estão aqui
+          </a>
+          <a id="lblJuntos">juntos para brincar!</a>
+        </p>
+      </div>
+      <div class="divFormCadastro" id="frmAcesso">
+        <a>Vem você também brincar com a gente!</a>
+        <form class="frmAcesso">
+          <input
+            class="inptCadastro"
+            type="text"
+            placeholder="Nome"
+            required="true"
+          />
+          <input
+            class="inptCadastro"
+            type="text"
+            placeholder="Sobrenome"
+            required="true"
+          />
+          <input
+            class="inptCadastro"
+            type="date"
+            placeholder="Data de Nascimento"
+            required="true"
+          />
+          <div class="divSelect">
+            <label id="lblSlctOpcao" for="slctOpcao"
+              >Faixa Etária de Interesse</label
+            >
+            <select id="slctOpcao" class="slctOpcao" required="true">
+              <option class="slctOpcao">De 0 a 4 anos</option>
+              <option class="slctOpcao">De 4 a 7 anos</option>
+              <option class="slctOpcao">De 7 a 10 anos</option>
+              <option class="slctOpcao">De 10 a 13 anos</option>
+              <option class="slctOpcao">Acima de 13 anos</option>
+            </select>
+          </div>
+          <input
+            class="inptCadastro"
+            type="email"
+            placeholder="e-Mail"
+            required="true"
+          />
+          <input
+            class="inptCadastro"
+            type="password"
+            placeholder="Senha"
+            required="true"
+          />
+          <a id="lnkBtnSalvar" class="lnkBtn" href="">Cadastrar</a>
+        </form>
+      </div>
     </div>
-
-    <form>
-      <label for="nomeCompleto"></label>
-      <input type="text" id="nomeCompleto" value="Nome Completo" /><br />
-      <label for="email"></label>
-      <input type="text" id="email" value="E-mail" /><br />
-      <label for="assunto"></label>
-      <input type="text" id="assunto" value="Assunto" /><br />
-
-      <button id="btnSalvar">Salvar</button>
-      <button id="btnCancelar">Cancelar</button>
-    </form>
   </body>
   <footer>
     <div class="divFooter">

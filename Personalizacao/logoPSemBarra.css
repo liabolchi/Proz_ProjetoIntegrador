@@ -1,0 +1,247 @@
+*{
+    scroll-behavior: auto;
+}
+
+/*Personalização dos Cabeçalhos
+*/
+.divHeader{
+    display: flex;
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.ulHeader{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0C67D6;
+    align-items: center;
+}
+
+.lnkHeader{
+    margin-inline: 1em;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lnkHeader:hover, .liHeader:hover .lnkBtn{
+    background-color: #8FAADC;
+}
+
+.liHeader{
+    display: inline-block;
+}
+  
+.liHeader:hover .dropDownContent{
+    display: block;
+}
+
+.dropDownContent{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0C67D6(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent .lnkHeader {
+    color: #0C67D6;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropDownContent .lnkHeader:hover{
+    background-color: #8FAADC;
+}
+
+.lnkBtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    margin-inline: 1em;
+}
+
+#hdLeft{
+    justify-content: flex-start;
+} 
+
+#hdRight{
+    justify-content: flex-end;
+}
+
+.divForm{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.inptAcesso{
+    margin: 1em;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    color: #8FAADC;
+    border-color: #F1BE2F;
+}
+
+.lnkRecAcesso{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-size: smaller;
+    color: #0C67D6;
+    justify-content: flex-end;
+}
+
+#lnkNovoAcesso{
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: 3em;
+    justify-content: center;
+    color: white;
+    background-color: #F1BE2F;
+    font-weight: bold;
+    align-items: center;
+}
+
+#lnkBtnAcessar{
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: 3em;
+    justify-content: center;
+    color: white;
+    background-color:#0C67D6;
+    font-weight: bold;
+    align-items: center;
+}
+
+/*Personalização do logo e barra de pesquisa
+*/
+.divLogo{
+    display:flex;
+    justify-content: center;
+    margin-top: -1em;
+    align-items: center;
+}
+
+#imgLogo{
+    width:15em;
+}
+
+/*Personalização do Corpo da Página
+*/
+.divBody{
+    font-family: Comic Sans MS;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+}
+
+/* Personalização SideMenu
+*/
+.divSideMenu{
+    /* background-image: url(../Auxiliares/Imagens/SideMenu.png);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    width: 16em;
+    border: #F1BE2F solid;
+    border-width: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+.ulSideMenu{
+    list-style-type:none;
+    color: #51006A;;
+    text-decoration-line: none;
+    font-size: small;
+    font-weight: bold;
+}
+
+.liSideMenu{
+    padding-top: 1em;
+    text-align:start;
+}
+
+/*Personalização do conteúdo principal da página
+*/
+.divConteudo{
+    width: 100%;
+    margin-left: 3em;
+}
+
+.divFiltros{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+}
+
+.navAtividades{
+    display: flex;
+    font-family: Comic Sans MS;
+    font-size: small;
+    padding-top: 1em;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Personalização do Rodapé da página
+*/
+.divFooter{
+    padding: 0;
+    margin-top: 5em;
+    
+    background-color:#0C67D6 ;
+    font-family: Comic Sans MS;
+    font-size: small;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}
+
+.ulFooter{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0C67D6;
+    align-items: center;
+}
+
+.lnkFooter{
+    margin-inline: 1em;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.lnkFooter:hover, .liFooter:hover .lnkBtn{
+    background-color: #8FAADC;
+}
