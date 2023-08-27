@@ -176,6 +176,20 @@
     vertical-align: center;
 }
 
+/*Personalização do Título da Página
+*/
+.divTituloPagina{
+    padding: 0;
+    margin:2em;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Comic Sans MS;
+    font-size: large;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    color:#51006A;
+}
+
 /*Personalização do Corpo da Página
 */
 .divBody{
@@ -192,14 +206,19 @@
     /* background-image: url(../Auxiliares/Imagens/SideMenu.png);
     background-size: 100%;
     background-repeat: no-repeat; */
-    width: 16em;
+    width: max-content;
     border: #F1BE2F solid;
     border-width: 1px;
     padding: 0;
     margin: 0;
+    margin-left: 3em;
 }
 
 .ulSideMenu{
+    width: max-content;
+    padding:0;
+    margin-bottom: 2em;
+    padding-inline: 1em;
     list-style-type:none;
     color: #51006A;;
     text-decoration-line: none;
@@ -208,31 +227,97 @@
 }
 
 .liSideMenu{
+    padding: 0;
+    margin-left: 2em;
     padding-top: 1em;
-    text-align:start;
+    text-align:left;
+    width: max-content;
+    color:#D55247;
 }
 
 /*Personalização do conteúdo principal da página
 */
 .divConteudo{
     width: 100%;
-    margin-left: 3em;
 }
 
 .divFiltros{
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 3em;
+    justify-content: space-between;
+    margin-inline: 3em;
 }
 
+.ulAcoes{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.liAcao{
+    margin-inline: 1em;
+    list-style-type: none;
+    color: #0C67D6;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Personalização do conteúdo apresentado
+*/
 .navAtividades{
     display: flex;
     font-family: Comic Sans MS;
     font-size: small;
     padding-top: 1em;
     flex-direction: row;
-    justify-content: space-around;
 }
+
+.divAtividades{
+    padding: 0;
+    margin: 0;
+    margin-right: 3em;
+}
+
+.olAtividades{
+    display: flex;
+    justify-content: space-between;
+    font-family: Comic Sans MS;
+    font-size: small;
+    padding-top: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.liListaAtiv{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #8FAADC solid;
+    border-width: 1px;
+    height: 2.5em;
+    align-items: center;
+}
+
+.imgAtivAcao{
+    padding-inline: 1em;
+    vertical-align: center;
+}
+
+#imgEditar{
+    height: 1.5em;
+}
+
+#imgBloquear{
+    height: 2em;
+}
+
+#imgExcluir{
+    height: 2em;
+}
+
 
 /* Personalização do Rodapé da página
 */

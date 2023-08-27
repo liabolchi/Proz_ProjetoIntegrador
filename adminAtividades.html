@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoGSemBarra.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoPComBarra.css" />
     <title>AtivaKids</title>
   </head>
   <header>
@@ -45,12 +45,12 @@
           <li class="liHeader">
             <a class="lnkBtn" href="">Administrador</a>
             <div class="dropDownContent">
-              <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
+              <a class="lnkHeader" href="#">Atividades</a>
               <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
+              <a class="lnkHeader" href="./adminPermissoes.html">Permissões</a>
               <a class="lnkHeader" href="./adminPlanos.html"
                 >Juntos Para Brincar</a
               >
-              <a class="lnkHeader" href="./adminPermissoes.html">Permissões</a>
             </div>
           </li>
           <li class="liHeader">
@@ -97,73 +97,95 @@
     </div>
     <div class="divLogo">
       <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
+      <div class="searchBar">
+        <input
+          id="inptPesquisar"
+          class="inptSearch"
+          placeholder="Que atividade está procurando?"
+        />
+        <img
+          id="imgLupa"
+          src="./Auxiliares/Imagens/Lupa.png"
+          class="inptSearch"
+        />
+      </div>
+    </div>
+    <div class="divTituloPagina">
+      <a>Gerenciamento de Atividades</a>
     </div>
   </header>
   <body>
-    <div class="divPrincipal">
-      <div clas="divTexto">
-        <p class="parDivTexto">
-          <a class="lblTexto"
-            >O fórum é um dos benefícios que você poderá desfrutar ao se juntar
-            ao movimento
-          </a>
-          <a id="lblAtiva">AtivaKids</a>
-        </p>
-        <p class="parDivTexto">
-          <a class="lblTexto"
-            >Venha fazer parte de uma comunidade e trocar experiências com
-            outros tutores que estão aqui
-          </a>
-          <a id="lblJuntos">juntos para brincar!</a>
-        </p>
+    <div class="divBody">
+      <div class="divSideMenu">
+        <nav>
+          <ul class="ulSideMenu">
+            Gerenciamento de Atividades
+            <li class="liSideMenu" id="liAtividades">Atividades Cadastradas</li>
+            <li class="liSideMenu" id="liAtividades">
+              Repositorio de Atividades
+            </li>
+          </ul>
+          <ul class="ulSideMenu">
+            Gerenciamento de Categorias
+            <li class="liSideMenu" id="liAtividades">Categorias Cadastradas</li>
+          </ul>
+        </nav>
       </div>
-      <div class="divFormCadastro" id="frmAcesso">
-        <a>Vem você também brincar com a gente!</a>
-        <form class="frmAcesso">
-          <input
-            class="inptCadastro"
-            type="text"
-            placeholder="Nome"
-            required="true"
-          />
-          <input
-            class="inptCadastro"
-            type="text"
-            placeholder="Sobrenome"
-            required="true"
-          />
-          <input
-            class="inptCadastro"
-            type="date"
-            placeholder="Data de Nascimento"
-            required="true"
-          />
-          <div class="divSelect">
-            <label id="lblSlctOpcao" for="slctOpcao"
-              >Faixa Etária de Interesse</label
-            >
-            <select id="slctOpcao" class="slctOpcao" required="true">
-              <option class="slctOpcao">De 0 a 4 anos</option>
-              <option class="slctOpcao">De 4 a 7 anos</option>
-              <option class="slctOpcao">De 7 a 10 anos</option>
-              <option class="slctOpcao">De 10 a 13 anos</option>
-              <option class="slctOpcao">Acima de 13 anos</option>
-            </select>
+      <div class="divConteudo">
+        <div class="divFiltros">
+          <div>
+            <ul class="ulAcoes">
+              <a class="liAcao" href="#">Nova</a>
+              <a class="liAcao">Inativar</a>
+            </ul>
           </div>
-          <input
-            class="inptCadastro"
-            type="email"
-            placeholder="e-Mail"
-            required="true"
-          />
-          <input
-            class="inptCadastro"
-            type="password"
-            placeholder="Senha"
-            required="true"
-          />
-          <a id="lnkBtnSalvar" class="lnkBtn" href="">Cadastrar</a>
-        </form>
+          <select>
+            <option value="dataCriacao">Data de Criação</option>
+            <option value="nome">Nome</option>
+          </select>
+        </div>
+        <div class="divAtividades">
+          <nav>
+            <ol id="olAtividades">
+              <li class="liListaAtiv">
+                <div class="divItemAtiv">
+                  <input type="checkbox" />
+                  <a>Atividade 1</a>
+                </div>
+                <div class="divItemAcao">
+                  <img
+                    id="imgEditar"
+                    class="imgAtivAcao"
+                    src="./Auxiliares/Imagens/LapisContato.png"
+                  />
+                  <img
+                    id="imgExcluir"
+                    class="imgAtivAcao"
+                    src="./Auxiliares/Imagens/Lixeira.png"
+                  />
+                </div>
+              </li>
+              <li class="liListaAtiv">
+                <div class="divItemAtiv">
+                  <input type="checkbox" />
+                  <a>Atividade 2</a>
+                </div>
+                <div class="divItemAcao">
+                  <img
+                    id="imgEditar"
+                    class="imgAtivAcao"
+                    src="./Auxiliares/Imagens/LapisContato.png"
+                  />
+                  <img
+                    id="imgExcluir"
+                    class="imgAtivAcao"
+                    src="./Auxiliares/Imagens/Lixeira.png"
+                  />
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
     </div>
   </body>
