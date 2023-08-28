@@ -169,7 +169,7 @@
 
 /*Personalização do Corpo da Página
 */
-.divBody{
+.divMain{
     font-family: Comic Sans MS;
     font-size: small;
     
@@ -182,12 +182,12 @@
 
 /*Personalização do conteúdo principal da página
 */
-.divMain{
+/* .divMain2{
     font-family: Comic Sans MS;
     font-size: small;
     padding-top: 5em;
     justify-content: space-around;
-}
+} */
 
 .navLnkOthers{
     font-family: Comic Sans MS;
