@@ -222,34 +222,39 @@
 .divFooter{
     padding: 0;
     margin-top: 5em;
-    
     background-color:#0C67D6 ;
     font-family: Comic Sans MS;
     font-size: small;
-
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.ulFooter{
+.divCateg{
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    height: 3em;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #0C67D6;
-    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 2em;
+}
+
+.aCateg{
+    font-family: Comic Sans MS;
+    font-size: small;
+    color:white;
+    text-align: left;
+}
+
+#aCatTit{
+    padding-bottom: 1em;
 }
 
 .lnkFooter{
-    margin-inline: 1em;
-    list-style-type: none;
+    padding-left: 2em;
+    line-height: 2em;
+    width: max-content;
+    font-size: smaller;
     color: white;
-    text-align: center;
+    text-align: left;
     text-decoration-line: none;
 }
 

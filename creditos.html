@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoPComBarra.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoPSemBarra.css" />
     <title>AtivaKids</title>
   </head>
   <header>
@@ -30,7 +30,7 @@
             <a class="lnkBtn" href="./paginaInicial.html">Início</a>
           </li>
           <li class="liHeader">
-            <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
+            <a class="lnkBtn" href="#">Sobre Nós</a>
           </li>
           <li class="liHeader">
             <a class="lnkBtn" href="./contato.html">Contato</a>
@@ -47,10 +47,10 @@
             <div class="dropDownContent">
               <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
               <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-              <a class="lnkHeader" href="#">Permissões</a>
               <a class="lnkHeader" href="./adminPlanos.html"
                 >Juntos Para Brincar</a
               >
+              <a class="lnkHeader" href="./adminPermissoes.html">Permissões</a>
             </div>
           </li>
           <li class="liHeader">
@@ -97,111 +97,12 @@
     </div>
     <div class="divLogo">
       <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
-      <div class="searchBar">
-        <input
-          id="inptPesquisar"
-          class="inptSearch"
-          placeholder="Qual perfil ou permissão procura?"
-        />
-        <img
-          id="imgLupa"
-          src="./Auxiliares/Imagens/Lupa.png"
-          class="inptSearch"
-        />
-      </div>
     </div>
     <div class="divTituloPagina">
-      <a>Gerenciamento de Permissões</a>
+      <a>Gerenciamento de Atividades</a>
     </div>
   </header>
-  <body>
-    <div class="divBody">
-      <div class="divSideMenu">
-        <nav>
-          <ul class="ulSideMenu">
-            Gerenciamento de Perfis
-            <li class="liSideMenu" id="liAtividades">Perfis Cadastrados</li>
-            <li class="liSideMenu" id="liAtividades">Perfis Inativos</li>
-          </ul>
-          <ul class="ulSideMenu">
-            Gerenciamento de Permissões
-            <li class="liSideMenu" id="liAtividades">Permissões Cadastradas</li>
-            <li class="liSideMenu" id="liCategorias" href="#">
-              Permissões Inativas
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="divConteudo">
-        <div class="divFiltros">
-          <div>
-            <ul class="ulAcoes">
-              <a class="liAcao" href="#">Nova</a>
-              <a class="liAcao" href="#">Atribuir Permissão</a>
-              <a class="liAcao" href="#">Bloquear</a>
-              <a class="liAcao" href="#">Inativar</a>
-            </ul>
-          </div>
-          <select>
-            <option value="dataCriacao">Data de Criação</option>
-            <option value="nome">Nome</option>
-          </select>
-        </div>
-        <div class="divAtividades">
-          <nav>
-            <ol id="olAtividades">
-              <li class="liListaAtiv">
-                <div class="divItemAtiv">
-                  <input type="checkbox" />
-                  <a>Perfil 1</a>
-                </div>
-                <div class="divItemAcao">
-                  <img
-                    id="imgEditar"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/LapisContato.png"
-                  />
-                  <img
-                    id="imgBloquear"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Bloquear.png"
-                  />
-                  <img
-                    id="imgExcluir"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Lixeira.png"
-                  />
-                </div>
-              </li>
-              <li class="liListaAtiv">
-                <div class="divItemAtiv">
-                  <input type="checkbox" />
-                  <a>Perfil 2</a>
-                </div>
-                <div class="divItemAcao">
-                  <img
-                    id="imgEditar"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/LapisContato.png"
-                  />
-                  <img
-                    id="imgBloquear"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Bloquear.png"
-                  />
-                  <img
-                    id="imgExcluir"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Lixeira.png"
-                  />
-                </div>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body></body>
   <footer>
     <div class="divFooter">
       <div class="divCateg">
@@ -220,7 +121,7 @@
         <a class="aCateg" id="aCatTit">Institucional</a>
         <a class="lnkFooter" href="./sobreNos.html">Sobre Nós</a>
         <a class="lnkFooter" href="./contato.html">Contato</a>
-        <a class="lnkFooter" href="./creditos.html">Créditos</a>
+        <a class="lnkFooter" href="#">Créditos</a>
       </div>
     </div>
   </footer>
