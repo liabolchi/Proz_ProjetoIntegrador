@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoPComBarra.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoPSemBarra.css" />
     <title>AtivaKids</title>
   </head>
   <header>
@@ -46,11 +46,9 @@
             <a class="lnkBtn" href="">Administrador</a>
             <div class="dropDownContent">
               <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
-              <a class="lnkHeader" href="#">Usuários</a>
+              <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
               <a class="lnkHeader" href="./adminPermissoes.html">Permissões</a>
-              <a class="lnkHeader" href="./adminPlanos.html"
-                >Juntos Para Brincar</a
-              >
+              <a class="lnkHeader" href="#">Juntos Para Brincar</a>
             </div>
           </li>
           <li class="liHeader">
@@ -103,45 +101,175 @@
     </div>
     <div class="divLogo">
       <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
-      <div class="searchBar">
-        <input
-          id="inptPesquisar"
-          class="inptSearch"
-          placeholder="Qual usuário está procurando?"
-        />
-        <img
-          id="imgLupa"
-          src="./Auxiliares/Imagens/Lupa.png"
-          class="inptSearch"
-        />
-      </div>
     </div>
     <div class="divTituloPagina">
-      <a>Gerenciamento de Usuários</a>
+      <a>Meus Dados</a>
     </div>
   </header>
   <body>
     <div class="divBody">
+      <div class="divMeusDadosCadastrais">
+        <div class="divCadFoto">
+          <div>
+            <div class="divMenu">
+              <div class="divMenuTit">
+                <a>Foto Perfil</a>
+              </div>
+              <div class="divMenuOpt">
+                <a>Salvar</a>
+              </div>
+            </div>
+            <div class="divCont">
+              <form class="divForm">
+                <div class="divFormLine">
+                  <label for="inptArquivo" id="lblArquivo" class="lblCont"
+                    >Selecione a Foto para o Perfil</label
+                  >
+                  <input id="inptArquivo" type="file" class="inptCont" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="divMeusDados">
+          <div>
+            <div class="divMenu">
+              <div class="divMenuTit">
+                <a>Meus Dados Cadastrais</a>
+              </div>
+              <div class="divMenuOpt">
+                <a>Salvar</a>
+              </div>
+            </div>
+            <div class="divCont">
+              <form class="divForm">
+                <div class="divFormLine">
+                  <label for="inptNome" id="lblNome" class="lblCont"
+                    >Nome</label
+                  >
+                  <input id="inptNome" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptSobrenome" id="lblSobrenome" class="lblCont"
+                    >Sobrenome</label
+                  >
+                  <input id="inptSobrenome" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptDataNasc" id="lblDataNasc" class="lblCont"
+                    >Data de Nascimento</label
+                  >
+                  <input id="inptDataNasc" type="date" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptEndereco" id="lblEndereco" class="lblCont"
+                    >Endereço</label
+                  >
+                  <input id="inptEndereco" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptEndNum" id="lblEndNum" class="lblCont"
+                    >Número</label
+                  >
+                  <input id="inptEndNum" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptEndComp" id="lblEndComp" class="lblCont"
+                    >Complemento</label
+                  >
+                  <input id="inptEndComp" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="inptEndCep" id="lblEndCep" class="lblCont"
+                    >CEP</label
+                  >
+                  <input id="inptEndCep" type="text" class="inptCont" />
+                </div>
+                <div class="divFormLine">
+                  <label for="slctEstado" id="lblEstado" class="lblCont"
+                    >Estado</label
+                  >
+                  <select id="slctEstado" class="inptCont">
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>PE</option>
+                    <option>ES</option>
+                    <option>PR</option>
+                  </select>
+                </div>
+                <div class="divFormLine">
+                  <label for="inptTelefone" id="lblTelefone" class="lblCont"
+                    >Telefone</label
+                  >
+                  <input id="inptTelefone" type="text" class="inptCont" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="divPreferencias">
+          <div>
+            <div class="divMenu">
+              <div class="divMenuTit">
+                <a>Preferências</a>
+              </div>
+              <div class="divMenuOpt">
+                <a>Salvar</a>
+              </div>
+            </div>
+            <div class="divCont">
+              <form class="divForm">
+                <div class="divFormLine">
+                  <label for="slctFaixa" id="lblFaixa" class="lblCont"
+                    >Faixa Etária de Interesse</label
+                  >
+                  <select id="slctFaixa" class="inptCont">
+                    <option>De 0 a 4 anos</option>
+                    <option>De 4 a 7 anos</option>
+                    <option>De 7 a 10 anos</option>
+                    <option>De 10 a 13 anos</option>
+                    <option>Acima de 13 anos</option>
+                  </select>
+                </div>
+                <div class="divFormLine">
+                  <label for="inptNewsEmail" id="lblEmail" class="lblCont"
+                    >Deseja receber novidades por e-Mail ?</label
+                  >
+                  <div class="inptCheck">
+                    <input id="inptNewsEmail" type="checkbox" />
+                  </div>
+                </div>
+                <div class="divFormLine">
+                  <label for="inptNewsSMS" id="lblSMS" class="lblCont"
+                    >Deseja receber novidades por SMS/WhatsApp ?</label
+                  >
+                  <div class="inptCheck">
+                    <input id="inptNewsSMS" type="checkbox" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divFoto">
+        <div id="foto">
+          <img src="./Auxiliares/Imagens/fotoprovisoria150.png" />
+        </div>
+      </div>
+    </div>
+    <!--     
+    <div class="divBody">
       <div class="divSideMenu">
         <nav>
           <ul class="ulSideMenu">
-            Gerenciamento de Usuários
-            <li class="liSideMenu" id="liAtividades">Usuários Cadastrados</li>
+            Gerenciamento de Planos
+            <li class="liSideMenu" id="liAtividades">Planos Cadastrados</li>
             <li class="liSideMenu" id="liCategorias" href="#">
-              Usuários Bloqueados
+              Planos Bloqueados
             </li>
             <li class="liSideMenu" id="liRepositorio" href="#">
-              Usuários Inativos
-            </li>
-          </ul>
-          <ul class="ulSideMenu">
-            Gerenciamento de Grupos
-            <li class="liSideMenu" id="liAtividades">Grupos Cadastrados</li>
-            <li class="liSideMenu" id="liCategorias" href="#">
-              Grupos Bloqueados
-            </li>
-            <li class="liSideMenu" id="liRepositorio" href="#">
-              Grupos Inativos
+              Planos Inativos
             </li>
           </ul>
         </nav>
@@ -150,8 +278,7 @@
         <div class="divFiltros">
           <div>
             <ul class="ulAcoes">
-              <a class="liAcao" href="#">Novo Grupo</a>
-              <a class="liAcao" href="#">Atribuir Permissão</a>
+              <a class="liAcao" href="#">Novo Plano</a>
               <a class="liAcao" href="#">Bloquear</a>
               <a class="liAcao" href="#">Inativar</a>
             </ul>
@@ -167,7 +294,7 @@
               <li class="liListaAtiv">
                 <div class="divItemAtiv">
                   <input type="checkbox" />
-                  <a>Usuário 1</a>
+                  <a>Plano 1</a>
                 </div>
                 <div class="divItemAcao">
                   <img
@@ -190,7 +317,7 @@
               <li class="liListaAtiv">
                 <div class="divItemAtiv">
                   <input type="checkbox" />
-                  <a>Usuário 2</a>
+                  <a>Plano 2</a>
                 </div>
                 <div class="divItemAcao">
                   <img
@@ -214,7 +341,7 @@
           </nav>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
   <footer>
     <div class="divFooter">

@@ -220,6 +220,139 @@
     justify-content: space-around;
 }
 
+.divMeusDadosCadastrais{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+    margin-right: 5em;
+}
+
+.divCadFoto{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.divMenu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Comic Sans MS;
+    font-size: medium;
+    color: #51006A;
+    margin-top: 2em;
+
+}
+
+.divMenuTit{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 25em;
+
+}
+
+.divMenuOpt{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 25em;
+}
+
+.divCont{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divForm{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+}
+
+.divFormLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.lblCont{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    text-align: right;
+    font-family: Comic Sans MS;
+    font-size: small;
+    color: #0C67D6;
+}
+
+.inptCont{
+    padding: 0;
+    margin-left: 0.5em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    display: flex;
+    justify-content: flex-start;
+    height: 2em;
+    vertical-align: center;
+    color: #0C67D6;
+    border-color: #F1BE2F;
+    border-width: 1px;
+    border-style: solid;
+    width: 50%;
+    text-align: center;
+}
+
+.inptCheck{
+    padding: 0;
+    margin-left: 0.5em;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 2em;
+}
+
+.divFoto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2em;
+    border:#8FAADC solid;
+    border-width: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#foto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 2em;
+    border: #F1BE2F solid;
+    border-width: 2px;
+}
+
 /* Personalização do Rodapé da página
 */
 .divFooter{
