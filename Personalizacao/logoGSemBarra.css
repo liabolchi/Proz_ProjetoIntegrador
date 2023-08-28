@@ -143,16 +143,36 @@
     width:25em;
 }
 
+/*Personalização do Título da Página
+*/
+.divTituloPagina{
+    padding: 0;
+    margin:2em;
+    display: flex;
+    justify-content: center;
+    font-family: Comic Sans MS;
+    font-size: large;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    color:#D55247;
+}
+
 /*Personalização do Corpo da Página
 */
 .divBody{
     font-family: Comic Sans MS;
     font-size: small;
-    
     display: flex;
     justify-content: center;
     padding-top: 5em;
     padding-bottom: 5em;
+}
+
+.bodyTuristica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 6em;
 }
 
 /*Personalização do conteúdo principal da página
@@ -229,7 +249,7 @@
 #lblJuntos{
     font-family: Carrotflower;
     font-size: large;
-    color: #FF7065;
+    color: #D55247;
     font-weight: bold;
 }
 
@@ -266,10 +286,10 @@
     border-style: solid;
 }
 
-.divSelect{
+.divSelectFaixa{
     width: 30em;
     font-family: Comic Sans MS;
-    color: #FF7065;
+    color: #D55247;
     font-size: small;
     font-weight: bold;
     align-items: center;
@@ -296,6 +316,74 @@
     font-weight: bold;
     align-items: center;
 }
+
+.divMapa{
+    display: flex;
+    padding: 0;
+    flex-direction:column;
+    align-content: flex-start;
+    width: max-content;
+}
+
+#imgMapa{
+    padding: 0;
+    margin: 0;
+    width:40em;
+}
+
+.divInfoTuristica{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divTextoTuristica{
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    text-align: center;
+    align-items: center;
+}
+
+.tbLocais{
+    font-family: Comic Sans MS;
+    font-size: small;
+    color:#D55247;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.trLinha{
+    height: 3em;
+
+}
+
+#trLinha:hover {
+    background-color: #8FAADC
+}
+
+.tdColuna{
+    border-bottom: #8FAADC solid;
+    border-bottom-width: 1px;
+}
+
+.local{
+    text-decoration: none;
+    color:#D55247
+}
+
+#tdColLocal{
+    text-align: left;
+    width: 30em;
+}
+  
+#tdColEstado{
+    text-align: right;
+    width: 5em;
+}
+
 
 /* Personalização do Rodapé da página
 */

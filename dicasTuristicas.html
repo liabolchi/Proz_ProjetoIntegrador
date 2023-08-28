@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoGComBarra.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoGSemBarra.css" />
     <title>AtivaKids</title>
   </head>
   <header>
@@ -27,7 +27,7 @@
       <nav>
         <ul id="hdLeft" class="ulHeader">
           <li class="liHeader">
-            <a class="lnkBtn" href="#">Início</a>
+            <a class="lnkBtn" href="./paginaInicial.html">Início</a>
           </li>
           <li class="liHeader">
             <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
@@ -73,17 +73,17 @@
                       class="inptAcesso"
                       type="email"
                       placeholder="e-Mail"
-                      required
+                      required="true"
                     />
                     <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
                     <input
                       class="inptAcesso"
                       type="password"
                       placeholder="senha"
-                      required
+                      required="true"
                     />
                     <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                    <a id="lnkNovoAcesso" class="lnkBtn" href="#"
+                    <a id="lnkNovoAcesso" class="lnkBtn" href=""
                       >Novo Cadastro</a
                     >
                     <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
@@ -97,57 +97,68 @@
     </div>
     <div class="divLogo">
       <img id="imgLogo" src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" />
-      <div class="searchBar">
-        <input
-          id="inptPesquisar"
-          class="inptSearch"
-          placeholder="O que vamos fazer hoje?"
-        />
-        <img
-          id="imgLupa"
-          src="./Auxiliares/Imagens/Lupa.png"
-          class="inptSearch"
-        />
-      </div>
+    </div>
+    <div class="divTituloPagina">
+      <a>Lugares legais para conhecer!</a>
     </div>
   </header>
   <body>
-    <main>
-      <div class="divBody">
-        <nav class="navLnkOthers">
-          <div class="divLnkOthers">
-            <a class="lnkOthers" href="./nossasFavoritas.html"
-              >Nossas Preferidas</a
-            ><br />
-            <img class="imgPgInicial" src="./Auxiliares/Imagens/Faixas.png" />
-          </div>
-          <div class="divLnkOthers">
-            <a class="lnkOthers" href="./atividades.html">Nossas atividades</a
-            ><br />
-            <img class="imgPgInicial" src="./Auxiliares/Imagens/Chao.jpeg" />
-          </div>
-          <div class="divLnkOthers">
-            <a class="lnkOthers" href="./atividades.html"
-              >Atividades para Dias Especiais?</a
-            ><br />
-            <img
-              class="imgPgInicial"
-              src="./Auxiliares/Imagens/MaosTinta.jpeg"
-            />
-          </div>
-          <div class="divLnkOthers">
-            <a class="lnkOthers" href="./conviteCadastro.html">Fórum</a><br />
-            <img class="imgPgInicial" src="./Auxiliares/Imagens/Unidos.jpeg" />
-          </div>
-          <div class="divLnkOthers">
-            <a class="lnkOthers" href="./dicasTuristicas.html"
-              >Lugares para Conhecer</a
-            ><br />
-            <img class="imgPgInicial" src="./Auxiliares/Imagens/Barraca.png" />
-          </div>
-        </nav>
+    <div class="bodyTuristica">
+      <div class="divMapa">
+        <img id="imgMapa" src="Auxiliares/Imagens/mapa.png" />
       </div>
-    </main>
+      <div class="divInfoTuristica">
+        <div id="divTextoTuristica">
+          <p>
+            <a class="lblTexto"
+              >Selecionamos alguns lugares que achamos especiais e divertidos de
+              você visitar!</a
+            >
+          </p>
+          <p>
+            <a class="lblTexto">
+              Com certeza você também vai curtir conhecê-los e aprender um pouco
+              mais sobre a história de onde você mora ou de nosso imenso e
+              diverso país!</a
+            >
+          </p>
+        </div>
+        <div class="divTable">
+          <table class="tbLocais">
+            <tr id="trLinha" class="trLinha">
+              <td id="tdColLocal" class="tdColuna">
+                <a class="local" href="#">Local 1</a>
+              </td>
+              <td id="tdColEstado" class="tdColuna">Estado 1</td>
+            </tr>
+            <tr id="trLinha" class="trLinha">
+              <td id="tdColLocal" class="tdColuna">
+                <a class="local" href="#">Local 2</a>
+              </td>
+              <td id="tdColEstado" class="tdColuna">Estado 2</td>
+            </tr>
+            <tr id="trLinha" class="trLinha">
+              <td id="tdColLocal" class="tdColuna">
+                <a class="local" href="#">Local 3</a>
+              </td>
+              <td id="tdColEstado" class="tdColuna">Estado 3</td>
+            </tr>
+            <tr id="trLinha" class="trLinha">
+              <td id="tdColLocal" class="tdColuna">
+                <a class="local" href="#">Local 4</a>
+              </td>
+              <td id="tdColEstado" class="tdColuna">Estado 4</td>
+            </tr>
+            <tr id="trLinha" class="trLinha">
+              <td id="tdColLocal" class="tdColuna">
+                <a class="local" href="#">Local 5</a>
+              </td>
+              <td id="tdColEstado" class="tdColuna">Estado 5</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
   <footer>
     <div class="divFooter">
