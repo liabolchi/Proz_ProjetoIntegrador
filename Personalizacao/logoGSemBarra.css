@@ -182,8 +182,8 @@
     padding-top: 0;
     margin: 0;
     display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+    flex-direction:column;
+    justify-content: center;
 }
 
 .navLnkOthers{
@@ -228,37 +228,57 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    
-    }
+}
+
+.divTxtSB{
+    padding: 1em;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: sticky;
+    overflow: hidden;
+}
 
 .parDivTexto{
     margin: 0;
     padding:1em;
     width: 200em;
 }
-#divTxtSB{
+
+.divParagrafos{
+    width: 50%;
+    height:50%;
     display:flex;
     flex-direction: column;
-    align-items:center;
-    height:40em;
-    margin-top:5em;
-    background-image:url("../Auxiliares/Imagens/Balao.png");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position:top;
     justify-content: center;
-    
-    
+    align-content: flex-end;
+    position: relative;
+    overflow: hidden;
 }
+
+.divImage{
+    display: flex;
+    margin-top: 5em;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#imgFtSobreNos{
+    width: 70%;
+}
+
 .parDivTextoSB{
     margin: 0;
     padding:0;
     width:70%;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     color:#51006A
 }
-
 
 .lblTexto{
     font-family: Comic Sans MS;
