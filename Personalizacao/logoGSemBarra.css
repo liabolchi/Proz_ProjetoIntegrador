@@ -232,7 +232,10 @@
     margin: 0;
     padding:1em;
     width: 50%;
+    background-position: ;
 }
+
+#parDivTextoSB
 
 .lblTexto{
     font-family: Comic Sans MS;
