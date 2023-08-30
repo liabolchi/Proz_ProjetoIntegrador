@@ -231,41 +231,61 @@
 }
 
 .divTxtSB{
-    padding: 1em;
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: sticky;
-    overflow: hidden;
+    align-items: center;
 }
 
 .parDivTexto{
     margin: 0;
     padding:1em;
-    width: 200em;
+    width: 60%;
 }
 
 .divParagrafos{
     width: 50%;
-    height:50%;
+    height: 100%;
+    position: absolute;
+}
+
+#divParagrafos{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
+    justify-content: left;
+    align-items: left;
+    text-align: center;
+    padding-top: 15em;
+    padding-inline-end: 4em;
+}
+
+.divBalao{
     position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 50%;
+}
+
+#imgBalao{
+    opacity: 0.2;
+    width: 70%;
+    height: 70%;
 }
 
 .divImage{
     display: flex;
-    margin-top: 5em;
+    margin:0;
     padding: 0;
     width: 50%;
     height: 100%;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-top: -7em;
 }
+
+
 
 #imgFtSobreNos{
     width: 70%;
@@ -274,10 +294,10 @@
 .parDivTextoSB{
     margin: 0;
     padding:0;
-    width:70%;
     font-size: large;
     font-weight: bold;
-    color:#51006A
+    color:#51006A;
+    font-optical-sizing: auto;
 }
 
 .lblTexto{
@@ -429,7 +449,6 @@
     text-align: right;
     width: 5em;
 }
-
 
 /* Personalização do Rodapé da página
 */
