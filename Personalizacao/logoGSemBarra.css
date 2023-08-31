@@ -82,15 +82,6 @@
     flex-direction: column;
     box-sizing: border-box;
 }
-/*Personalização para página contato*/
-.divContato{
-    margin: 1em;
-    width: 100%;
-    height: 2em;
-    text-align: center;
-    color: #F1BE2F;
-    border-color: #F1BE2F;
-}
 
 .inptAcesso{
     margin: 1em;
@@ -168,6 +159,14 @@
 
 /*Personalização do Corpo da Página
 */
+
+.bodyTuristica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 6em;
+}
+
 .divMain{
     font-family: Comic Sans MS;
     font-size: small;
@@ -177,15 +176,7 @@
     padding-bottom: 5em;
 }
 
-.bodyTuristica{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-inline: 6em;
-}
-
-
- .divMain2{
+.divMain2{
     font-family: Comic Sans MS;
     font-size: x-large;
     padding-top: 0;
@@ -193,6 +184,21 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
+}
+
+.divContato{
+    padding: 0;
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#imgLapisContato{
+    width: 3em;
 }
 
 .navLnkOthers{
@@ -294,8 +300,6 @@
     margin-top: -7em;
 }
 
-
-
 #imgFtSobreNos{
     width: 70%;
 }
@@ -327,16 +331,6 @@
     color: #D55247;
     font-weight: bold;
 }
-/*Em teste. Pagina contato*/
-.divFormCadastro2{
-    padding: 0;
-    margin: 0;
-    font-family: Comic Sans MS;
-    font-size: large;
-    color: #0C67D6;
-    text-align: center;
-    
-}
 
 #border{
     border-color: solid blue 1px;
@@ -347,16 +341,26 @@
     margin: 0;
     font-family: Comic Sans MS;
     font-size: large;
-    color: #0C67D6;
+    color:#0C67D6;
     text-align: center;
 }
 
 .frmAcesso{
-    margin: 0;
+    margin-top:1em;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#txtAreaAssunto{
+    width: 100%;
+    height: 10em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    text-align: center;
+    resize: none;
+    scroll-behavior: auto;
 }
 
 .divSelect{
