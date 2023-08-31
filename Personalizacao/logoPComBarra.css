@@ -320,6 +320,18 @@
     height: 2em;
 }
 
+#imgFavoritar{
+    height: 1.5em;
+}
+
+#imgAvaliar{
+    height: 1.5em;
+}
+
+#imgDownload{
+    height: 1.5em;
+}
+
 .tbAtividades{
     margin-inline: 3em;
     margin-top: 1em;

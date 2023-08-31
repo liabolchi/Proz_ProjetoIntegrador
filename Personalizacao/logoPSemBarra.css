@@ -228,6 +228,14 @@
     margin-right: 5em;
 }
 
+#divSeguranca, #divAssinatura{
+    width: 65%;
+}
+
+#inptDtContr, #inptDtVal{
+    pointer-events: none;
+}
+
 .divCadFoto{
     display: flex;
     flex-direction: column;
@@ -331,6 +339,11 @@
     height: 2em;
 }
 
+#divAppAuth{
+    display: flex;
+    align-items: flex-start;
+}
+
 .divFoto{
     display: flex;
     justify-content: center;
@@ -342,12 +355,45 @@
     height: 200px;
 }
 
+#divCheckQR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    width: 50%;
+}
+
 #foto{
     display: flex;
     justify-content: center;
     align-content: center;
     width: 150px;
     height: 150px;
+    margin: 2em;
+    border: #F1BE2F solid;
+    border-width: 2px;
+}
+
+.divQRCode{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border:#8FAADC solid;
+    border-width: 10px;
+}
+
+#imgQRCode{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    height: 250px;
     margin: 2em;
     border: #F1BE2F solid;
     border-width: 2px;
