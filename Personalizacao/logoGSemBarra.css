@@ -251,6 +251,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    z-index: -10;
 }
 
 .parDivTexto{
@@ -291,8 +292,6 @@
 
 .divImage{
     display: flex;
-    margin:0;
-    padding: 0;
     width: 50%;
     height: 100%;
     justify-content: space-around;
