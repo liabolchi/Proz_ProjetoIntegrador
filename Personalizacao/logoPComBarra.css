@@ -95,7 +95,9 @@
     height: 2em;
     text-align: center;
     color: #8FAADC;
-    border-color: #F1BE2F;
+    border:#F1BE2F solid 1px;
+    font-size: small;
+    font-family: Comic Sans MS;
 }
 
 .lnkRecAcesso{
@@ -310,6 +312,8 @@
 
 #imgEditar{
     height: 1.5em;
+    cursor: pointer;
+    pointer-events: all;
 }
 
 #imgBloquear{
@@ -346,6 +350,11 @@
     height: 250px;
     margin-inline: 1em;
     margin-bottom: 2em;
+}
+
+.divItemAcao{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Personalização do Rodapé da página
@@ -391,4 +400,251 @@
 
 .lnkFooter:hover, .liFooter:hover .lnkBtn{
     background-color: #8FAADC;
+}
+
+ /*-------------------------------------------------------------------------------------------------*/ 
+ /*                                    Personalização - Tela Nova Atividade                         */
+ /*-------------------------------------------------------------------------------------------------*/
+
+.btn {
+cursor:pointer;
+background:white;
+text-align:center;
+padding:5px 10px;
+color:#0C67D6;
+display:inline-block;
+text-decoration: none;
+margin-inline: 1em;
+}
+
+.divNvAtividade {
+    .tit {
+        font-family: Comic Sans MS;
+        font-size: large;
+        margin:0;
+    }
+
+    .dlgClose .bt {
+        position:absolute;
+        right:5px;
+        top:5px;
+        background:none;
+        color: white;
+        padding:5px 10px;
+        border:0;
+        &:before {
+        content: "\f00d";
+        font-family: Comic Sans MS;
+        }
+    }
+
+    &:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &:target:before {
+        display: block;
+    }
+
+    &:target {
+        .dlgNvAtividade {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+        }
+    }
+}
+
+.dlgNvAtividade {
+    background: white;
+    position: fixed;
+    z-index: 11;
+    width: max-content;
+    height: max-content;
+    right: 40%;
+
+
+    -webkit-transform: translate(0, 500%);
+    -moz-transform: translate(0, 500%);
+    transform: translate(0, 500%);
+
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.dlgNvAtividadeContent {
+    padding:10px;
+
+}
+
+.dlgHdrNvAtividade,
+.dlgFtrNvAtividade {
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    background-color:#0C67D6;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: small;
+}
+
+.dlgHdrNvAtividade {
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+
+}
+
+.dlgFtrNvAtividade {
+    border-top: 1px solid white;
+    text-align: right;
+    justify-content: center;
+}
+
+.slctOpcao{
+    margin-top: 1em;
+    width: 100%;
+    height: 2em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    color: #8FAADC;
+    text-align: center;
+}
+
+.divFormLine{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+}
+
+.lblCont{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: small;
+    font-weight: bold;
+    color: #0C67D6;
+    margin-bottom: 1em;
+}
+
+.inptCont{
+    padding: 0;
+    margin: 0;
+    font-family: Comic Sans MS;
+    font-size: small;
+    height: 2em;
+    vertical-align: center;
+    color:#8FAADC;
+    border: #F1BE2F solid 1px;
+    text-align: center;
+}
+
+ /*-------------------------------------------------------------------------------------------------*/ 
+ /*                                Personalização - Tela Editar Atividade                           */
+ /*-------------------------------------------------------------------------------------------------*/
+
+ 
+.divEdtAtividade {
+    .tit {
+        font-family: Comic Sans MS;
+        font-size: large;
+        margin:0;
+    }
+
+    .dlgClose .bt {
+        position:absolute;
+        right:5px;
+        top:5px;
+        background:none;
+        color: white;
+        padding:5px 10px;
+        border:0;
+        &:before {
+        content: "\f00d";
+        font-family: Comic Sans MS;
+        }
+    }
+
+    &:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &:target:before {
+        display: block;
+    }
+
+    &:target {
+        .dlgEdtAtividade {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+        }
+    }
+}
+
+.dlgEdtAtividade {
+    background: white;
+    position: fixed;
+    z-index: 11;
+    width: max-content;
+    height: max-content;
+    left: 40%;
+
+
+    -webkit-transform: translate(0, 500%);
+    -moz-transform: translate(0, 500%);
+    transform: translate(0, 500%);
+
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.dlgEdtAtividadeContent {
+    padding:10px;
+
+}
+
+.dlgHdrEdtAtividade,
+.dlgFtrEdtAtividade {
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    background-color:#0C67D6;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: small;
+}
+
+.dlgHdrEdtAtividade {
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+
+}
+
+.dlgFtrEdtAtividade {
+    border-top: 1px solid white;
+    text-align: right;
+    justify-content: space-around;
 }
