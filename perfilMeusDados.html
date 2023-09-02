@@ -46,20 +46,20 @@
             <li class="liHeader">
               <a class="lnkBtn" href="">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
                 <a class="lnkHeader" href="./adminPermissoes.html"
                   >Permissões</a
                 >
-                <a class="lnkHeader" href="#">Juntos Para Brincar</a>
+                <a class="lnkHeader" href="./adminPlanos.html"
+                  >Juntos Para Brincar</a
+                >
               </div>
             </li>
             <li class="liHeader">
               <a class="lnkBtn" href="">Perfil</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./perfilMeusDados.html"
+                <a class="lnkHeader" href="#l"
                   >Meus Dados</a
                 >
                 <a class="lnkHeader" href="./perfilSeguranca.html">Segurança</a>
@@ -75,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href=""
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
@@ -268,90 +282,6 @@
           </div>
         </div>
       </div>
-      <!--     
-    <div class="divBody">
-      <div class="divSideMenu">
-        <nav>
-          <ul class="ulSideMenu">
-            Gerenciamento de Planos
-            <li class="liSideMenu" id="liAtividades">Planos Cadastrados</li>
-            <li class="liSideMenu" id="liCategorias" href="#">
-              Planos Bloqueados
-            </li>
-            <li class="liSideMenu" id="liRepositorio" href="#">
-              Planos Inativos
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="divConteudo">
-        <div class="divFiltros">
-          <div>
-            <ul class="ulAcoes">
-              <a class="liAcao" href="#">Novo Plano</a>
-              <a class="liAcao" href="#">Bloquear</a>
-              <a class="liAcao" href="#">Inativar</a>
-            </ul>
-          </div>
-          <select>
-            <option value="dataCriacao">Data de Criação</option>
-            <option value="nome">Nome</option>
-          </select>
-        </div>
-        <div class="divAtividades">
-          <nav>
-            <ol id="olAtividades">
-              <li class="liListaAtiv">
-                <div class="divItemAtiv">
-                  <input type="checkbox" />
-                  <a>Plano 1</a>
-                </div>
-                <div class="divItemAcao">
-                  <img
-                    id="imgEditar"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/LapisContato.png"
-                  />
-                  <img
-                    id="imgBloquear"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Bloquear.png"
-                  />
-                  <img
-                    id="imgExcluir"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Lixeira.png"
-                  />
-                </div>
-              </li>
-              <li class="liListaAtiv">
-                <div class="divItemAtiv">
-                  <input type="checkbox" />
-                  <a>Plano 2</a>
-                </div>
-                <div class="divItemAcao">
-                  <img
-                    id="imgEditar"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/LapisContato.png"
-                  />
-                  <img
-                    id="imgBloquear"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Bloquear.png"
-                  />
-                  <img
-                    id="imgExcluir"
-                    class="imgAtivAcao"
-                    src="./Auxiliares/Imagens/Lixeira.png"
-                  />
-                </div>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div> -->
     </main>
     <footer>
       <div class="divFooter">

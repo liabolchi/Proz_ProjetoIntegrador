@@ -46,15 +46,13 @@
             <li class="liHeader">
               <a class="lnkBtn" href="">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-                <a class="lnkHeader" href="./adminPlanos.html"
-                  >Juntos Para Brincar</a
-                >
                 <a class="lnkHeader" href="./adminPermissoes.html"
                   >Permissões</a
+                >
+                <a class="lnkHeader" href="./adminPlanos.html"
+                  >Juntos Para Brincar</a
                 >
               </div>
             </li>
@@ -77,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href="#"
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>

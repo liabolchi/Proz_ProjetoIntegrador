@@ -31,7 +31,7 @@
               <a class="lnkBtn" href="./paginaInicial.html">Início</a>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="#">Sobre Nós</a>
+              <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
             </li>
             <li class="liHeader">
               <a class="lnkBtn" href="./contato.html">Contato</a>
@@ -46,15 +46,13 @@
             <li class="liHeader">
               <a class="lnkBtn" href="">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-                <a class="lnkHeader" href="./adminPlanos.html"
-                  >Juntos Para Brincar</a
-                >
                 <a class="lnkHeader" href="./adminPermissoes.html"
                   >Permissões</a
+                >
+                <a class="lnkHeader" href="./adminPlanos.html"
+                  >Juntos Para Brincar</a
                 >
               </div>
             </li>
@@ -77,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href=""
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
@@ -115,10 +127,166 @@
         />
       </div>
       <div class="divTituloPagina">
-        <a>Gerenciamento de Atividades</a>
+        <a>Minhas Configurações de Segurança</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="divMain">
+        <div class="divMeusDadosCadastrais" id="divSeguranca">
+          <div class="divCadFoto">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>Dados de Acesso</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Salvar</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="inptEmail" id="lblEmail" class="lblCont"
+                      >e-Mail</label
+                    >
+                    <input id="inptEmail" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptPassAtual" id="lblPassAtual" class="lblCont"
+                      >Senha Atual</label
+                    >
+                    <input
+                      id="inptPassAtual"
+                      type="password"
+                      class="inptCont"
+                    />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptNwPass" id="lblNwPass" class="lblCont"
+                      >Nova Senha</label
+                    >
+                    <input id="inptNwPass" type="password" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptRpNwPass" id="lblRpNwPass" class="lblCont"
+                      >Confirmar Nova Senha</label
+                    >
+                    <input id="inptRpNwPass" type="password" class="inptCont" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="divMeusDados">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>Recuperação de Senha e e-Mail</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Salvar</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="inptRecMail" id="lblRecMail" class="lblCont"
+                      >e-Mail de Recuperação</label
+                    >
+                    <input id="inptRecMail" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptFrsSeg" id="lblFrsSeg" class="lblCont"
+                      >Frase de Segurança</label
+                    >
+                    <input id="inptFrsSeg" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptPergSeg" id="lblPergSeg" class="lblCont"
+                      >Pergunta de Segurança</label
+                    >
+                    <input id="inptPergSeg" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptRespSeg" id="lblRespSeg" class="lblCont"
+                      >Resposta</label
+                    >
+                    <input id="inptRespSeg" type="text" class="inptCont" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="divPreferencias">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>MFA</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Salvar</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="inptMFA" id="lblMFA" class="lblCont"
+                      >Habilitar autenticação em duas etapas ?</label
+                    >
+                    <div class="inptCheck">
+                      <input id="inptMFA" type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptTkSMS" id="lblTkSMS" class="lblCont"
+                      >Token por SMS:</label
+                    >
+                    <input
+                      id="inptTkSMS"
+                      type="text"
+                      class="inptCont"
+                      placeholder="Informe o número do telefone incluindo DDI/DDD"
+                    />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptTkWhtApp" id="lblTkWhtApp" class="lblCont"
+                      >Token por WhatsApp:</label
+                    >
+                    <input
+                      id="inptTkWhtApp"
+                      type="text"
+                      class="inptCont"
+                      placeholder="Informe o número do telefone incluindo DDI/DDD"
+                    />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptTkEMail" id="lblTkEmail" class="lblCont"
+                      >Token por e-Mail:</label
+                    >
+                    <input id="inptTkEmail" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine" id="divAppAuth">
+                    <label for="inptAppAuth" id="lblAppAuth" class="lblCont"
+                      >Token via App de autenticação:</label
+                    >
+                    <div id="divCheckQR">
+                      <div class="inptCheck">
+                        <input id="inptAppAuth" type="checkbox" />
+                      </div>
+                      <div class="divQRCode">
+                        <div id="imgQRCode">
+                          <img src="Auxiliares/Imagens/fotoprovisoria150.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="divFooter">
         <div class="divCateg">

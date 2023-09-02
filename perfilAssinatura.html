@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE ht ml>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,7 @@
               <a class="lnkBtn" href="./paginaInicial.html">Início</a>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="#">Sobre Nós</a>
+              <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
             </li>
             <li class="liHeader">
               <a class="lnkBtn" href="./contato.html">Contato</a>
@@ -46,15 +46,13 @@
             <li class="liHeader">
               <a class="lnkBtn" href="">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-                <a class="lnkHeader" href="./adminPlanos.html"
-                  >Juntos Para Brincar</a
-                >
                 <a class="lnkHeader" href="./adminPermissoes.html"
                   >Permissões</a
+                >
+                <a class="lnkHeader" href="./adminPlanos.html"
+                  >Juntos Para Brincar</a
                 >
               </div>
             </li>
@@ -77,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href=""
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
@@ -115,10 +127,123 @@
         />
       </div>
       <div class="divTituloPagina">
-        <a>Gerenciamento de Atividades</a>
+        <a>Programa Juntos para Brincar - Minha Assinatura</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="divMain">
+        <div class="divMeusDadosCadastrais" id="divAssinatura">
+          <div class="divCadFoto">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>Minha Assinatura</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Salvar</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="slctPlano" id="lblPlano" class="lblCont"
+                      >Plano</label
+                    >
+                    <select id="slctPlano" class="inptCont">
+                      <option>Plano 1</option>
+                      <option>Plano 2</option>
+                      <option>Plano 2</option>
+                    </select>
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptAutoRnv" id="lblAutoRnv" class="lblCont"
+                      >Renovação Automática</label
+                    >
+                    <div class="inptCheck">
+                      <input id="inptAutoRnv" type="checkbox" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="divMeusDados">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>Vigência do Plano</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Histórico de Contratação</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="inptDtContr" id="lblDtContr" class="lblCont"
+                      >Data de Contratação</label
+                    >
+                    <input id="inptDtContr" type="text" class="inptCont" />
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptDtVal" id="lblDtVal" class="lblCont"
+                      >Data de Validade</label
+                    >
+                    <input id="inptDtVal" type="text" class="inptCont" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="divPreferencias">
+            <div>
+              <div class="divMenu">
+                <div class="divMenuTit">
+                  <a>Forma de Pagamento</a>
+                </div>
+                <div class="divMenuOpt">
+                  <a>Salvar</a>
+                </div>
+              </div>
+              <div class="divCont">
+                <form class="divForm">
+                  <div class="divFormLine">
+                    <label for="inptBoleto" id="lblBoleto" class="lblCont"
+                      >Boleto</label
+                    >
+                    <div class="inptCheck">
+                      <input id="inptBoleto" type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptPix" id="lblPix" class="lblCont">Pix</label>
+                    <div class="inptCheck">
+                      <input id="inptPix" type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptTransf" id="lblTransf" class="lblCont"
+                      >Transferência Bancária</label
+                    >
+                    <div class="inptCheck">
+                      <input id="inptTransf" type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="divFormLine">
+                    <label for="inptCredito" id="lblCredito" class="lblCont"
+                      >Cartão de Crédito</label
+                    >
+                    <div class="inptCheck">
+                      <input id="inptCredito" type="checkbox" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="divFooter">
         <div class="divCateg">

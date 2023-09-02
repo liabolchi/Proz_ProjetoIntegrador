@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: auto;
+}
+
 /*Personalização dos Cabeçalhos
 */
 .divHeader{
@@ -44,15 +48,17 @@
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 10em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0C67D6(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropDownContent .lnkHeader {
     color: #0C67D6;
     padding: 1em 1em;
     text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    text-align: left;
 }
 
 .dropDownContent .lnkHeader:hover{
@@ -76,29 +82,121 @@
     justify-content: flex-end;
 }
 
+ /*-------------------------------------------------------------------------------------------------*/ 
+ /*                                Personalização - Menu Acesso                                     */
+ /*-------------------------------------------------------------------------------------------------*/
+
+ .divAcesso {
+    .tit {
+        font-family: Comic Sans MS;
+        font-size: large;
+        margin:0;
+    }
+
+    .dlgClose .bt {
+        position:absolute;
+        /* right:5px;
+        top:5px; */
+        background:none;
+        color: white;
+        /* padding:5px 10px; */
+        border:0;
+        &:before {
+        content: "\f00d";
+        font-family: Comic Sans MS;
+        }
+    }
+
+    &:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &:target:before {
+        display: block;
+    }
+
+    &:target {
+        .dlgAcesso {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+        }
+    }
+}
+
+.dlgAcesso {
+    background: white;
+    position: fixed;
+    z-index: 11;
+    width: max-content;
+    height: max-content;
+    right: 40%;
+
+
+    -webkit-transform: translate(0, 500%);
+    -moz-transform: translate(0, 500%);
+    transform: translate(0, 500%);
+
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.dlgAcessoContent {
+    padding:10px;
+}
+
+.dlgHdrAcesso,
+.dlgFtrAcesso {
+    display: flex;
+    padding:10px;
+    background-color:#0C67D6;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: small;
+}
+
+.dlgHdrAcesso {
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+
+.dlgFtrAcesso {
+    flex-direction: column;
+    border-top: 1px solid white;
+    text-align: right;
+    justify-content: space-between;
+}
+
 .divForm{
-    width: 20em;
+    margin: 0;
+    padding: 0;
+    width: max-content;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-}
-/*Personalização para página contato*/
-.divContato{
-    margin: 1em;
-    width: 100%;
-    height: 2em;
-    text-align: center;
-    color: #F1BE2F;
-    border-color: #F1BE2F;
+    justify-content: center;
 }
 
 .inptAcesso{
-    margin: 1em;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 2em;
     text-align: center;
     color: #8FAADC;
-    border-color: #F1BE2F;
+    border:#F1BE2F solid 1px;
+    font-size: small;
+    font-family: Comic Sans MS;
 }
 
 .lnkRecAcesso{
@@ -110,33 +208,45 @@
     font-size: smaller;
     color: #0C67D6;
     justify-content: flex-end;
+    margin-bottom: 2em;
 }
 
-#lnkNovoAcesso{
+#lnkNovoAcesso, #lnkBtnNvAtvSalvar, #lnkBtnEdtAtvSalvar{
     display: flex;
-    margin: 1em;
+    margin: 0;
+    margin-bottom: 1em;
     padding: 0;
     width: 100%;
     height: 3em;
     justify-content: center;
-    color: white;
-    background-color: #F1BE2F;
+    color: #F1BE2F;
+    background-color: white;
     font-weight: bold;
     align-items: center;
 }
 
-#lnkBtnAcessar{
+#lnkBtnAcessar, #lnkBtnEdtAtvCancelar{
     display: flex;
-    margin: 1em;
+    margin: 0;
     padding: 0;
     width: 100%;
     height: 3em;
     justify-content: center;
-    color: white;
-    background-color:#0C67D6;
+    color: #0C67D6;
+    background-color:white;
     font-weight: bold;
     align-items: center;
 }
+
+.btn {
+    cursor:pointer;
+    background:white;
+    text-align:center;
+    padding:5px 10px;
+    color:#0C67D6;
+    display:inline-block;
+    text-decoration: none;
+    }
 
 /*Personalização do logo e barra de pesquisa
 */
@@ -168,6 +278,14 @@
 
 /*Personalização do Corpo da Página
 */
+
+.bodyTuristica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 6em;
+}
+
 .divMain{
     font-family: Comic Sans MS;
     font-size: small;
@@ -177,15 +295,7 @@
     padding-bottom: 5em;
 }
 
-.bodyTuristica{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-inline: 6em;
-}
-
-
- .divMain2{
+.divMain2{
     font-family: Comic Sans MS;
     font-size: x-large;
     padding-top: 0;
@@ -193,6 +303,21 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
+}
+
+.divContato{
+    padding: 0;
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#imgLapisContato{
+    width: 3em;
 }
 
 .navLnkOthers{
@@ -245,6 +370,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    z-index: -10;
 }
 
 .parDivTexto{
@@ -285,16 +411,12 @@
 
 .divImage{
     display: flex;
-    margin:0;
-    padding: 0;
     width: 50%;
     height: 100%;
     justify-content: space-around;
     align-content: flex-start;
     margin-top: -7em;
 }
-
-
 
 #imgFtSobreNos{
     width: 70%;
@@ -327,16 +449,6 @@
     color: #D55247;
     font-weight: bold;
 }
-/*Em teste. Pagina contato*/
-.divFormCadastro2{
-    padding: 0;
-    margin: 0;
-    font-family: Comic Sans MS;
-    font-size: large;
-    color: #0C67D6;
-    text-align: center;
-    
-}
 
 #border{
     border-color: solid blue 1px;
@@ -347,16 +459,26 @@
     margin: 0;
     font-family: Comic Sans MS;
     font-size: large;
-    color: #0C67D6;
+    color:#0C67D6;
     text-align: center;
 }
 
 .frmAcesso{
-    margin: 0;
+    margin-top:1em;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#txtAreaAssunto{
+    width: 100%;
+    height: 10em;
+    font-family: Comic Sans MS;
+    font-size: small;
+    text-align: center;
+    resize: none;
+    scroll-behavior: auto;
 }
 
 .divSelect{

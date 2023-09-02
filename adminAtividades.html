@@ -75,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href=""
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
@@ -153,7 +167,92 @@
           <div class="divFiltros">
             <div>
               <ul class="ulAcoes">
-                <a class="liAcao" href="#">Nova</a>
+                <section>
+                  <span class="modal-trigger">
+                    <a class="liAcao" href="#popNvAtividade" aria-role="button"
+                      >Nova</a
+                    >
+                  </span>
+                  <div
+                    class="divNvAtividade"
+                    id="popNvAtividade"
+                    aria-hidden="true"
+                  >
+                    <article class="dlgNvAtividade">
+                      <header class="dlgHdrNvAtividade">
+                        <a class="tit">Nova Atividade</a>
+                        <span class="dlgClose">
+                          <a
+                            href="./adminAtividades.html"
+                            class="btn"
+                            aria-hidden="true"
+                            >X</a
+                          >
+                        </span>
+                      </header>
+                      <div class="dlgNvAtividadeContent">
+                        <form class="divForm">
+                          <input
+                            class="inptCont"
+                            type="text"
+                            placeholder="Nome da Atividade"
+                            required="true"
+                          />
+                          <select
+                            id="slctOpcao"
+                            class="slctOpcao"
+                            aria-placeholder="Categoria"
+                            required="true"
+                          >
+                            <option class="slctOpcao">
+                              Selecione a Categoria
+                            </option>
+                            <option class="slctOpcao">Categoria 1</option>
+                            <option class="slctOpcao">Categoria 2</option>
+                            <option class="slctOpcao">Categoria 3</option>
+                            <option class="slctOpcao">Categoria 4</option>
+                            <option class="slctOpcao">Categoria 5</option>
+                          </select>
+                          <div class="divFormLine">
+                            <label
+                              for="inptArquivo"
+                              id="lblArquivo"
+                              class="lblCont"
+                              >Selecione a foto da Atividade</label
+                            >
+                            <input
+                              id="inptArquivo"
+                              type="file"
+                              class="inptCont"
+                            />
+                          </div>
+                          <div class="divFormLine">
+                            <label
+                              for="inptArquivo"
+                              id="lblArquivo"
+                              class="lblCont"
+                              >Selecione o arquivo do PAP</label
+                            >
+                            <input
+                              id="inptArquivo"
+                              type="file"
+                              class="inptCont"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <footer class="dlgFtrNvAtividade">
+                        <a
+                          id="lnkBtnNvAtvSalvar"
+                          href="#"
+                          class="btn"
+                          aria-hidden="true"
+                          >Salvar</a
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </section>
                 <a class="liAcao">Inativar</a>
               </ul>
             </div>
@@ -171,11 +270,104 @@
                     <a>Atividade 1</a>
                   </div>
                   <div class="divItemAcao">
-                    <img
-                      id="imgEditar"
-                      class="imgAtivAcao"
-                      src="./Auxiliares/Imagens/LapisContato.png"
-                    />
+                    <section>
+                      <span class="modal-trigger">
+                        <a href="#popEdtAtividade" aria-role="button">
+                          <img
+                            id="imgEditar"
+                            class="imgAtivAcao"
+                            src="./Auxiliares/Imagens/LapisContato.png"
+                          />
+                        </a>
+                      </span>
+                      <div
+                        class="divEdtAtividade"
+                        id="popEdtAtividade"
+                        aria-hidden="true"
+                      >
+                        <article class="dlgEdtAtividade">
+                          <header class="dlgHdrEdtAtividade">
+                            <a class="tit">Editar Atividade</a>
+                            <span class="dlgClose">
+                              <a
+                                href="./adminAtividades.html"
+                                class="btn"
+                                aria-hidden="true"
+                                >X</a
+                              >
+                            </span>
+                          </header>
+                          <div class="dlgEdtAtividadeContent">
+                            <form class="divForm">
+                              <input
+                                class="inptCont"
+                                type="text"
+                                value="Atividade 1"
+                              />
+                              <select
+                                id="slctOpcao"
+                                class="slctOpcao"
+                                aria-placeholder="Categoria"
+                                required="true"
+                              >
+                                <option class="slctOpcao">
+                                  Selecione a Categoria
+                                </option>
+                                <option class="slctOpcao">Categoria 1</option>
+                                <option class="slctOpcao" selected="true">
+                                  Categoria 2
+                                </option>
+                                <option class="slctOpcao">Categoria 3</option>
+                                <option class="slctOpcao">Categoria 4</option>
+                                <option class="slctOpcao">Categoria 5</option>
+                              </select>
+                              <div class="divFormLine">
+                                <label
+                                  for="inptArquivo"
+                                  id="lblArquivo"
+                                  class="lblCont"
+                                  >Selecione a foto da Atividade</label
+                                >
+                                <input
+                                  id="inptArquivo"
+                                  type="file"
+                                  class="inptCont"
+                                />
+                              </div>
+                              <div class="divFormLine">
+                                <label
+                                  for="inptArquivo"
+                                  id="lblArquivo"
+                                  class="lblCont"
+                                  >Selecione o arquivo do PAP</label
+                                >
+                                <input
+                                  id="inptArquivo"
+                                  type="file"
+                                  class="inptCont"
+                                />
+                              </div>
+                            </form>
+                          </div>
+                          <footer class="dlgFtrEdtAtividade">
+                            <a
+                              id="lnkBtnEdtAtvSalvar"
+                              href="#"
+                              class="btn"
+                              aria-hidden="true"
+                              >Salvar</a
+                            >
+                            <a
+                              id="lnkBtnEdtAtvCancelar"
+                              href="#"
+                              class="btn"
+                              aria-hidden="true"
+                              >Cancelar</a
+                            >
+                          </footer>
+                        </article>
+                      </div>
+                    </section>
                     <img
                       id="imgExcluir"
                       class="imgAtivAcao"

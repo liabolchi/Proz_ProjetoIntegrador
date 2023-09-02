@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
     <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoPSemBarra.css" />
+    <link rel="stylesheet" href="./Personalizacao/logoPComBarra.css" />
     <title>AtivaKids</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
               <a class="lnkBtn" href="./paginaInicial.html">Início</a>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="#">Sobre Nós</a>
+              <a class="lnkBtn" href="./sobreNos.html">Sobre Nós</a>
             </li>
             <li class="liHeader">
               <a class="lnkBtn" href="./contato.html">Contato</a>
@@ -46,15 +46,13 @@
             <li class="liHeader">
               <a class="lnkBtn" href="">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-                <a class="lnkHeader" href="./adminPlanos.html"
-                  >Juntos Para Brincar</a
-                >
                 <a class="lnkHeader" href="./adminPermissoes.html"
                   >Permissões</a
+                >
+                <a class="lnkHeader" href="./adminPlanos.html"
+                  >Juntos Para Brincar</a
                 >
               </div>
             </li>
@@ -65,7 +63,7 @@
                   >Meus Dados</a
                 >
                 <a class="lnkHeader" href="./perfilSeguranca.html">Segurança</a>
-                <a class="lnkHeader" href="#"
+                <a class="lnkHeader" href=".#"
                   >Atividades Favoritas</a
                 >
                 <a class="lnkHeader" href="./perfilMeusDwnlds.html"
@@ -77,33 +75,47 @@
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Acesso</a>
-              <div class="dropDownContent" class="divMenuAcesso">
-                <div class="divForm">
-                  <form class="frmAcesso">
-                    <ul>
-                      <input
-                        class="inptAcesso"
-                        type="email"
-                        placeholder="e-Mail"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar e-Mail</li>
-                      <input
-                        class="inptAcesso"
-                        type="password"
-                        placeholder="senha"
-                        required="true"
-                      />
-                      <li class="lnkRecAcesso" href="">Recuperar Senha</li>
-                      <a id="lnkNovoAcesso" class="lnkBtn" href=""
+              <section>
+                <span class="modal-trigger">
+                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
+                    >Acesso</a
+                  >
+                </span>
+                <div class="divAcesso" id="popAcesso" aria-hidden="true">
+                  <article class="dlgAcesso">
+                    <header class="dlgHdrAcesso">
+                      <a class="tit">Login</a>
+                      <span class="dlgClose">
+                        <a href="#" class="btn" aria-hidden="true">X</a>
+                      </span>
+                    </header>
+                    <div class="dlgAcessoContent">
+                      <form class="frmAcesso">
+                        <input
+                          class="inptAcesso"
+                          type="email"
+                          placeholder="e-Mail"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
+                        <input
+                          class="inptAcesso"
+                          type="password"
+                          placeholder="senha"
+                          required="true"
+                        />
+                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
+                      </form>
+                    </div>
+                    <footer class="dlgFtrAcesso">
+                      <a id="lnkNovoAcesso" class="btn" href=""
                         >Novo Cadastro</a
                       >
-                      <a id="lnkBtnAcessar" class="lnkBtn" href="">Entrar</a>
-                    </ul>
-                  </form>
+                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
+                    </footer>
+                  </article>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
@@ -113,12 +125,107 @@
           id="imgLogo"
           src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png"
         />
+        <div class="searchBar">
+          <input
+            id="inptPesquisar"
+            class="inptSearch"
+            placeholder="Que atividade está procurando?"
+          />
+          <img
+            id="imgLupa"
+            src="./Auxiliares/Imagens/Lupa.png"
+            class="inptSearch"
+          />
+        </div>
       </div>
       <div class="divTituloPagina">
-        <a>Gerenciamento de Atividades</a>
+        <a>Minhas Atividades Favoritas</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="divMain">
+        <div class="divSideMenu">
+          <nav>
+            <ul class="ulSideMenu">
+              Atividades Favoritas
+              <li class="liSideMenu" id="liAtividades">Passeios ao ar livre</li>
+              <li class="liSideMenu" id="liAtividades">
+                No mundo da imaginação
+              </li>
+              <li class="liSideMenu" id="liAtividades">Vamos cozinhar?</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="divConteudo">
+          <div class="divFiltros">
+            <div>
+              <ul class="ulAcoes">
+                <a class="liAcao" href="#">Excluir</a>
+                <a class="liAcao" href="#">Download</a>
+                <a class="liAcao" href="#">Avaliar</a>
+              </ul>
+            </div>
+            <select>
+              <option value="dataCriacao">Data de Criação</option>
+              <option value="dataCriacao">Avaliação</option>
+              <option value="nome">Nome</option>
+            </select>
+          </div>
+          <div class="divAtividades">
+            <nav>
+              <ol id="olAtividades">
+                <li class="liListaAtiv">
+                  <div class="divItemAtiv">
+                    <input type="checkbox" />
+                    <a>Atividade 1</a>
+                  </div>
+                  <div class="divItemAcao">
+                    <img
+                      id="imgFavoritar"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Favoritar.png"
+                    />
+                    <img
+                      id="imgAvaliar"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Avaliar.png"
+                    />
+                    <img
+                      id="imgDownload"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Download.png"
+                    />
+                  </div>
+                </li>
+                <li class="liListaAtiv">
+                  <div class="divItemAtiv">
+                    <input type="checkbox" />
+                    <a>Atividade 2</a>
+                  </div>
+                  <div class="divItemAcao">
+                    <img
+                      id="imgFavoritar"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Favoritar.png"
+                    />
+                    <img
+                      id="imgAvaliar"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Avaliar.png"
+                    />
+                    <img
+                      id="imgDownload"
+                      class="imgAtivAcao"
+                      src="./Auxiliares/Imagens/Download.png"
+                    />
+                  </div>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="divFooter">
         <div class="divCateg">
