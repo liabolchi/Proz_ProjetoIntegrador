@@ -137,33 +137,53 @@
     </div>
   </header>
   <main>
-      <select id="ordernar" name="ordenar">
-        <option value="novosTopicos">Novos Tópicos</option>
-        <option value="maisacessados">Mais acessados</option>
-      </select>
-    </div>
-    <div>
+    <div class="divMain">
       <div>
-        <nav>
-          <a href="#">Categoria de Tópico 1</a><br />
-          <a href="#">Categoria de Tópico 2</a><br />
-          <a href="#">Categoria de Tópico 3</a><br />
-          <a href="#">Categoria de Tópico 4</a><br />
-          <a href="#">Categoria de Tópico 5</a><br />
-          <a href="#">Categoria de Tópico 6</a><br />
-          <a href="#">Categoria de Tópico 7</a><br />
-          <a href="#">Categoria de Tópico 8</a>
-        </nav>
+        <div class="divBtnNovoTopico">
+          <button id="botao" type="submit" onsubmit="">Novo Tópico</button>
+        </div>
+        <div class="divSideMenu">
+          <nav>
+            <ul class="ulSideMenu"> Tópicos
+              <li class="liSideMenu" href="#">Categoria de Tópico 1</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 2</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 3</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 4</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 5</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 6</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 7</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 8</li>
+          </nav>
+        </div>
       </div>
-      <div>
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" /> <br />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
+      <div class="divConteudo">
+        <div class="divFiltros" id="divFiltroAtividade">
+          <select>
+            <option selected disabled value="">Ordenar por</option>
+            <option value="novosTopicos">Novos Tópicos</option>
+            <option value="maisacessados">Mais acessados</option>
+          </select>
+        </div>
+        <div class="divAtividades">
+          <table class="tbAtividades">
+            <tr class="trAtividade">
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+            </tr>
+            <tr class="trAtividade">
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+            </tr>
+        </table>
+        </div>
       </div>
     </div>
   </main>
