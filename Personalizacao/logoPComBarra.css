@@ -748,3 +748,29 @@ text-decoration: none;
     text-align: center;
     justify-content: space-between;
 }
+//Classes da Kerol
+
+#divOrdenar{
+    justify-content: flex-end;
+}
+.divforum
+{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: small;
+    justify-content: center;
+    margin: 3em;
+}
+
+.divBtnNovoTopico
+{
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
