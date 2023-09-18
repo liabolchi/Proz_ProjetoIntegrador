@@ -556,3 +556,24 @@
 .lnkFooter:hover, .liFooter:hover .lnkBtn{
     background-color: #8FAADC;
 }
+/*Classes da Eliza*/
+
+.divFavTitulo
+{
+    padding: 0;
+    margin: 5em;
+    font-family: Comic Sans MS;
+    font-size: large;
+    color:#0C67D6;
+    text-align: center;
+}
+
+.divFavImagens
+{
+    margin: 2em;
+}
+
+.imgFav
+{
+    margin-inline: 1em;
+}
