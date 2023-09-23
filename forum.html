@@ -110,7 +110,7 @@
                     </form>
                   </div>
                   <footer class="dlgFtrAcesso">
-                    <a id="lnkNovoAcesso" class="btn" href=""
+                    <a id="lnkNovoAcesso" class="btn" href="./novoCadastro.html"
                       >Novo Cadastro</a
                     >
                     <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
@@ -139,33 +139,127 @@
     </div>
   </header>
   <main>
-      <select id="ordernar" name="ordenar">
-        <option value="novosTopicos">Novos Tópicos</option>
-        <option value="maisacessados">Mais acessados</option>
-      </select>
-    </div>
-    <div>
+    <div class="divMain">
       <div>
-        <nav>
-          <a href="#">Categoria de Tópico 1</a><br />
-          <a href="#">Categoria de Tópico 2</a><br />
-          <a href="#">Categoria de Tópico 3</a><br />
-          <a href="#">Categoria de Tópico 4</a><br />
-          <a href="#">Categoria de Tópico 5</a><br />
-          <a href="#">Categoria de Tópico 6</a><br />
-          <a href="#">Categoria de Tópico 7</a><br />
-          <a href="#">Categoria de Tópico 8</a>
-        </nav>
+        <div class="divSideMenu">
+          <nav>
+            <ul class="ulSideMenu"> Tópicos
+              <li class="liSideMenu" href="#">Categoria de Tópico 1</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 2</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 3</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 4</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 5</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 6</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 7</li>
+              <li class="liSideMenu" href="#">Categoria de Tópico 8</li>
+          </nav>
+        </div>
       </div>
-      <div>
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" /> <br />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
-        <img width="150px" height="150px" />
+      <div class="divConteudo">
+        <div class="divFiltros">
+          <div>
+            <ul class="ulAcoes">
+              <div>
+                <section>
+                  <span class="modal-trigger">
+                    <a class="liAcao" href="#popNvTopico" aria-role="button"
+                      >Novo Tópico</a>
+                  </span>
+                  <div
+                    class="divNvTopico"
+                    id="popNvTopico"
+                    aria-hidden="true"
+                  >
+                    <article class="dlgNvTopico">
+                      <header class="dlgHdrNvTopico">
+                        <a class="tit">Novo Tópico</a>
+                        <span class="dlgClose">
+                          <a
+                            href="./forum.html"
+                            class="btn"
+                            aria-hidden="true"
+                            >X</a
+                          >
+                        </span>
+                      </header>
+                      <div class="dlgNvTopicoContent">
+                        <form class="divForm">
+                          <input
+                            class="inptContTopico"
+                            type="text"
+                            placeholder="Nome do Topico"
+                            required="true"
+                          />
+                          <select
+                            id="slctOpcaoTopico"
+                            class="slctOpcaoTopico"
+                            aria-placeholder="Categoria"
+                            required="true"
+                          >
+                            <option class="slctOpcaoTopico">
+                              Selecione a Categoria
+                            </option>
+                            <option class="slctOpcaoTopico">Categoria 1</option>
+                            <option class="slctOpcaoTopico">Categoria 2</option>
+                            <option class="slctOpcaoTopico">Categoria 3</option>
+                            <option class="slctOpcaoTopico">Categoria 4</option>
+                            <option class="slctOpcaoTopico">Categoria 5</option>
+                          </select>
+                          <div class="divFormLineTopico">
+                            <label
+                              for="inptArquivoTopico"
+                              id="lblArquivoTopico"
+                              class="lblContTopico"
+                              >Selecione a foto do Tópico</label
+                            >
+                            <input
+                              id="inptArquivoTopico"
+                              type="file"
+                              class="inptContTopico"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <footer class="dlgFtrNvTopico">
+                        <a
+                          id="lnkBtnNvTopicoSalvar"
+                          href="#"
+                          class="btn"
+                          aria-hidden="true"
+                          >Salvar</a
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </ul>
+          </div>
+            <select>
+              <option value="novosTopicos">Novos Tópicos</option>
+              <option value="maisAcessados">Mais Acessados</option>
+            </select>
+        </div>
+        <div class="divAtividades">
+          <table class="tbAtividades">
+            <tr class="trAtividade">
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+            </tr>
+            <tr class="trAtividade">
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+              <td class="tdAtividade"><img width="150px" height="150px" /></td>
+            </tr>
+        </table>
+        </div>
       </div>
     </div>
   </main>
@@ -180,7 +274,7 @@
       <div class="divCateg">
         <a class="aCateg" id="aCatTit">Juntos Para Brincar</a>
         <a class="lnkFooter" href="#">Sobre Programa</a>
-        <a class="lnkFooter" href="#">Cadastro</a>
+        <a class="lnkFooter" href="./novoCadastro.html">Cadastro</a>
         <a class="lnkFooter" href="./conviteCadastro.html">Fórum</a>
       </div>
       <div class="divCateg">
