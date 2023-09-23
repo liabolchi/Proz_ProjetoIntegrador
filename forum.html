@@ -139,9 +139,6 @@
   <main>
     <div class="divMain">
       <div>
-        <div class="divBtnNovoTopico">
-          <button id="botao" type="submit" onsubmit="">Novo Tópico</button>
-        </div>
         <div class="divSideMenu">
           <nav>
             <ul class="ulSideMenu"> Tópicos
@@ -157,12 +154,89 @@
         </div>
       </div>
       <div class="divConteudo">
-        <div class="divFiltros" id="divFiltroAtividade">
-          <select>
-            <option selected disabled value="">Ordenar por</option>
-            <option value="novosTopicos">Novos Tópicos</option>
-            <option value="maisacessados">Mais acessados</option>
-          </select>
+        <div class="divFiltros">
+          <div>
+            <ul class="ulAcoes">
+              <div>
+                <section>
+                  <span class="modal-trigger">
+                    <a class="liAcao" href="#popNvTopico" aria-role="button"
+                      >Novo Tópico</a>
+                  </span>
+                  <div
+                    class="divNvTopico"
+                    id="popNvTopico"
+                    aria-hidden="true"
+                  >
+                    <article class="dlgNvTopico">
+                      <header class="dlgHdrNvTopico">
+                        <a class="tit">Novo Tópico</a>
+                        <span class="dlgClose">
+                          <a
+                            href="./forum.html"
+                            class="btn"
+                            aria-hidden="true"
+                            >X</a
+                          >
+                        </span>
+                      </header>
+                      <div class="dlgNvTopicoContent">
+                        <form class="divForm">
+                          <input
+                            class="inptContTopico"
+                            type="text"
+                            placeholder="Nome do Topico"
+                            required="true"
+                          />
+                          <select
+                            id="slctOpcaoTopico"
+                            class="slctOpcaoTopico"
+                            aria-placeholder="Categoria"
+                            required="true"
+                          >
+                            <option class="slctOpcaoTopico">
+                              Selecione a Categoria
+                            </option>
+                            <option class="slctOpcaoTopico">Categoria 1</option>
+                            <option class="slctOpcaoTopico">Categoria 2</option>
+                            <option class="slctOpcaoTopico">Categoria 3</option>
+                            <option class="slctOpcaoTopico">Categoria 4</option>
+                            <option class="slctOpcaoTopico">Categoria 5</option>
+                          </select>
+                          <div class="divFormLineTopico">
+                            <label
+                              for="inptArquivoTopico"
+                              id="lblArquivoTopico"
+                              class="lblContTopico"
+                              >Selecione a foto do Tópico</label
+                            >
+                            <input
+                              id="inptArquivoTopico"
+                              type="file"
+                              class="inptContTopico"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <footer class="dlgFtrNvTopico">
+                        <a
+                          id="lnkBtnNvTopicoSalvar"
+                          href="#"
+                          class="btn"
+                          aria-hidden="true"
+                          >Salvar</a
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </ul>
+          </div>
+            <select>
+              <option value="novosTopicos">Novos Tópicos</option>
+              <option value="maisAcessados">Mais Acessados</option>
+            </select>
         </div>
         <div class="divAtividades">
           <table class="tbAtividades">
