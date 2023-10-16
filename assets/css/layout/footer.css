@@ -1,0 +1,60 @@
+.footer .footer-main {
+  background-color: var(--ak-blue700);
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer .footer-main .footer-title {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-decoration: #ffffff wavy underline;
+  text-underline-offset: .5rem;
+}
+
+.footer .footer-main .col-4:nth-child(1) .footer-title {
+  text-decoration-color: #66BB6A;
+}
+
+.footer .footer-main .col-4:nth-child(2) .footer-title {
+  text-decoration-color: #FFF176;
+}
+
+.footer .footer-main .col-4:nth-child(3) .footer-title {
+  text-decoration-color: #EF5350;
+}
+
+.footer .footer-main .footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-main .footer-menu .footer-item + .footer-item {
+  margin-top: 8px;
+}
+
+.footer .footer-main .footer-menu .footer-item .footer-link {
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ak-gray300);
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer .footer-main .footer-menu .footer-item .footer-link i {
+  display: flex;
+  margin-right: 8px;
+}
+
+.footer .footer-main .footer-menu .footer-item .footer-link:hover {
+  color: #ffffff;
+  background-color: var(--ak-blue900);
+}
+
+.footer .footer-belt {
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--ak-blue800);
+}

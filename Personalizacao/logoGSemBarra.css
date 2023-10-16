@@ -6,8 +6,8 @@
 */
 .divHeader{
     display: flex;
-    background-color:#0C67D6 ;
-    font-family: Comic Sans MS;
+    /* background-color:#0C67D6 ; */
+    /* font-family: Comic Sans MS; */
     font-size: small;
     justify-content: space-between;
 }
@@ -20,7 +20,7 @@
     height: 3em;
     list-style-type: none;
     overflow: hidden;
-    background-color: #0C67D6;
+    /* background-color: #0C67D6; */
     align-items: center;
 }
 
@@ -88,7 +88,7 @@
 
  .divAcesso {
     .tit {
-        font-family: Comic Sans MS;
+        /* font-family: Comic Sans MS; */
         font-size: large;
         margin:0;
     }
@@ -103,7 +103,7 @@
         border:0;
         &:before {
         content: "\f00d";
-        font-family: Comic Sans MS;
+        /* font-family: Comic Sans MS; */
         }
     }
 
@@ -161,7 +161,7 @@
     padding:10px;
     background-color:#0C67D6;
     color: white;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
 }
 
@@ -196,7 +196,7 @@
     color: #8FAADC;
     border:#F1BE2F solid 1px;
     font-size: small;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
 }
 
 .lnkRecAcesso{
@@ -250,7 +250,7 @@
 
 /*Personalização do logo e barra de pesquisa
 */
-.divLogo{
+/* .divLogo{
     margin-top: -4em;
     padding-top: 3em;
     display:flex;
@@ -260,7 +260,7 @@
 
 #imgLogo{
     width:25em;
-}
+} */
 
 /*Personalização do Título da Página
 */
@@ -269,7 +269,7 @@
     margin:2em;
     display: flex;
     justify-content: center;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: large;
     font-weight: bold;
     font-optical-sizing: auto;
@@ -287,7 +287,7 @@
 }
 
 .divMain{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     display: flex;
     justify-content: center;
@@ -296,7 +296,7 @@
 }
 
 .divMain2{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: x-large;
     padding-top: 0;
     margin: 0;
@@ -321,7 +321,7 @@
 }
 
 .navLnkOthers{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
 
     display: flex;
@@ -389,10 +389,9 @@
 #divParagrafos{
     display:flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    text-align: center;
-    padding-top: 15em;
+    align-items: end;
+    text-align: end;
+    padding-top: 18em;
     padding-inline-end: 4em;
 }
 
@@ -433,7 +432,7 @@
 }
 
 .lblTexto{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: medium;
     color: #8FAADC 
 }
@@ -458,7 +457,7 @@
 .divFormCadastro{
     padding: 0;
     margin: 0;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: large;
     color:#0C67D6;
     text-align: center;
@@ -475,7 +474,7 @@
 #txtAreaAssunto{
     width: 100%;
     height: 10em;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     text-align: center;
     resize: none;
@@ -500,7 +499,7 @@
 
 .divSelectFaixa{
     width: 30em;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     color: #D55247;
     font-size: small;
     font-weight: bold;
@@ -510,7 +509,7 @@
 .slctOpcao{
     width: 100%;
     height: 2em;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     color: #0C67D6;
     text-align: center;
@@ -560,7 +559,7 @@
 }
 
 .tbLocais{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     color:#D55247;
     width: 100%;
@@ -602,7 +601,7 @@
     padding: 0;
     margin-top: 5em;
     background-color:#0C67D6 ;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     display: flex;
     flex-direction: row;
@@ -617,7 +616,7 @@
 }
 
 .aCateg{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     color:white;
     text-align: left;

@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Icone da Aba do navegador-->
-    <link
-      rel="shortcut Icon"
-      href="./Auxiliares/Imagens/iconeAba.png"
-      type="image/x-icon"
-    />
-    <!--Conexão com o Google Fonts-->
-    <link rel="preconnect" href="htpps://fonts.googleapis.com" />
-    <link rel="preconnect" href="htpps://fonts.gstatics.com" crossorigin="" />
-    <!--Personalização de Fontes-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=LuckiestGuy"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
-    <!--Personalização-->
-    <link rel="stylesheet" href="./Personalizacao/logoGSemBarra.css" />
-    <title>AtivaKids</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AtivaKids</title>
+
+  <!-- Icone da Aba do navegador -->
+  <link rel="shortcut Icon" href="./Auxiliares/Imagens/iconeAba.png" type="image/x-icon" />
+
+  <!-- Conexão com o Google Fonts -->
+  <link rel="preconnect" href="htpps://fonts.googleapis.com" />
+  <link rel="preconnect" href="htpps://fonts.gstatics.com" crossorigin="" />
+
+  <!-- Personalização de Fontes -->
+  <link rel="stylesheet" href="https://use.typekit.net/akl2dic.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Personalização -->
+  <link rel="stylesheet" href="./Personalizacao/logoGSemBarra.css" />
+</head>
+
+<body>
+  <!-- Header @s -->
+  <header class="header">
+    <div class="container">
       <div class="divHeader">
         <nav>
           <ul id="hdLeft" class="ulHeader">
@@ -44,167 +48,215 @@
               <a class="lnkBtn" href="./forum.html">Fórum</a>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Administrador</a>
+              <a class="lnkBtn" href="#">Administrador</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./adminAtividades.html"
-                  >Atividades</a
-                >
+                <a class="lnkHeader" href="./adminAtividades.html">Atividades</a>
                 <a class="lnkHeader" href="./adminUsuarios.html">Usuários</a>
-                <a class="lnkHeader" href="./adminPermissoes.html"
-                  >Permissões</a
-                >
-                <a class="lnkHeader" href="./adminPlanos.html"
-                  >Juntos Para Brincar</a
-                >
+                <a class="lnkHeader" href="./adminPermissoes.html">Permissões</a>
+                <a class="lnkHeader" href="./adminPlanos.html">Juntos Para Brincar</a>
               </div>
             </li>
             <li class="liHeader">
-              <a class="lnkBtn" href="">Perfil</a>
+              <a class="lnkBtn" href="#">Perfil</a>
               <div class="dropDownContent">
-                <a class="lnkHeader" href="./perfilMeusDados.html"
-                  >Meus Dados</a
-                >
+                <a class="lnkHeader" href="./perfilMeusDados.html">Meus Dados</a>
                 <a class="lnkHeader" href="./perfilSeguranca.html">Segurança</a>
-                <a class="lnkHeader" href="./perfilAtvFavorita.html"
-                  >Atividades Favoritas</a
-                >
-                <a class="lnkHeader" href="./perfilMeusDwnlds.html"
-                  >Meus Downloads</a
-                >
-                <a class="lnkHeader" href="./perfilAssinatura.html"
-                  >Juntos Para Brincar</a
-                >
+                <a class="lnkHeader" href="./perfilAtvFavorita.html">Atividades Favoritas</a>
+                <a class="lnkHeader" href="./perfilMeusDwnlds.html">Meus Downloads</a>
+                <a class="lnkHeader" href="./perfilAssinatura.html">Juntos Para Brincar</a>
               </div>
             </li>
             <li class="liHeader">
-              <section>
-                <span class="modal-trigger">
-                  <a class="lnkBtn" href="#popAcesso" aria-role="button"
-                    >Acesso</a
-                  >
-                </span>
-                <div class="divAcesso" id="popAcesso" aria-hidden="true">
-                  <article class="dlgAcesso">
-                    <header class="dlgHdrAcesso">
-                      <a class="tit">Login</a>
-                      <span class="dlgClose">
-                        <a href="#" class="btn" aria-hidden="true">X</a>
-                      </span>
-                    </header>
-                    <div class="dlgAcessoContent">
-                      <form class="frmAcesso">
-                        <input
-                          class="inptAcesso"
-                          type="email"
-                          placeholder="e-Mail"
-                          required="true"
-                        />
-                        <a class="lnkRecAcesso" href="">Recuperar e-Mail</a>
-                        <input
-                          class="inptAcesso"
-                          type="password"
-                          placeholder="senha"
-                          required="true"
-                        />
-                        <a class="lnkRecAcesso" href="">Recuperar Senha</a>
-                      </form>
-                    </div>
-                    <footer class="dlgFtrAcesso">
-                      <a
-                        id="lnkNovoAcesso"
-                        class="btn"
-                        href="./novoCadastro.html"
-                        >Novo Cadastro</a
-                      >
-                      <a id="lnkBtnAcessar" class="btn" href="">Entrar</a>
-                    </footer>
-                  </article>
-                </div>
-              </section>
+              <button type="button" class="btn-link lnkBtn" id="login-modal-open-btn">Acesso</button>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="divLogo">
-        <img
-          id="imgLogo"
-          src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png"
-        />
+    </div>
+  </header>
+  <!-- Header @e -->
+
+  <!-- main @s  -->
+  <main>
+    <section>
+      <div class="logo-box">
+        <img src="./Auxiliares/Imagens/Logo_ProjetoIntegrador.png" alt="logo_ativakids" />
       </div>
-    </header>
-    <main>
-      <div class="divPrincipal">
-        <div class="divFormCadastro">
-          <a>Vem você também brincar com a gente!</a>
-          <form class="frmAcesso">
-            <input
-              class="inptCadastro"
-              type="text"
-              placeholder="Nome"
-              required="true"
-            />
-            <input
-              class="inptCadastro"
-              type="text"
-              placeholder="Sobrenome"
-              required="true"
-            />
-            <input
-              class="inptCadastro"
-              type="date"
-              placeholder="Data de Nascimento"
-              required="true"
-            />
-            <div class="divSelectFaixa">
-              <label id="lblSlctOpcao" for="slctOpcao"
-                >Faixa Etária de Interesse</label
-              >
-              <select id="slctOpcao" class="slctOpcao" required="true">
-                <option class="slctOpcao">De 0 a 4 anos</option>
-                <option class="slctOpcao">De 4 a 7 anos</option>
-                <option class="slctOpcao">De 7 a 10 anos</option>
-                <option class="slctOpcao">De 10 a 13 anos</option>
-                <option class="slctOpcao">Acima de 13 anos</option>
-              </select>
-            </div>
-            <input
-              class="inptCadastro"
-              type="email"
-              placeholder="e-Mail"
-              required="true"
-            />
-            <input
-              class="inptCadastro"
-              type="password"
-              placeholder="Senha"
-              required="true"
-            />
-            <a id="lnkBtnSalvar" class="lnkBtn" href="">Cadastrar</a>
-          </form>
+    </section>
+    <section class="my-5">
+      <div class="container">
+        <div class="divPrincipal">
+          <div class="divFormCadastro">
+            <a>Vem você também brincar com a gente!</a>
+            <form class="frmAcesso">
+              <input class="inptCadastro" type="text" placeholder="Nome" required="true" />
+              <input class="inptCadastro" type="text" placeholder="Sobrenome" required="true" />
+              <input class="inptCadastro" type="date" placeholder="Data de Nascimento" required="true" />
+              <div class="divSelectFaixa">
+                <label id="lblSlctOpcao" for="slctOpcao">Faixa Etária de Interesse</label>
+                <select id="slctOpcao" class="slctOpcao" required="true">
+                  <option class="slctOpcao">De 0 a 4 anos</option>
+                  <option class="slctOpcao">De 4 a 7 anos</option>
+                  <option class="slctOpcao">De 7 a 10 anos</option>
+                  <option class="slctOpcao">De 10 a 13 anos</option>
+                  <option class="slctOpcao">Acima de 13 anos</option>
+                </select>
+              </div>
+              <input class="inptCadastro" type="email" placeholder="e-Mail" required="true" />
+              <input class="inptCadastro" type="password" placeholder="Senha" required="true" />
+              <a id="lnkBtnSalvar" class="lnkBtn" href="">Cadastrar</a>
+            </form>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="divFooter">
-        <div class="divCateg">
-          <a class="aCateg" id="aCatTit">Mídias</a>
-          <a class="lnkFooter" href="#">Instagram</a>
-          <a class="lnkFooter" href="#">Facebook</a>
-          <a class="lnkFooter" href="#">Whatsapp</a>
-        </div>
-        <div class="divCateg">
-          <a class="aCateg" id="aCatTit">Juntos Para Brincar</a>
-          <a class="lnkFooter" href="#">Sobre Programa</a>
-          <a class="lnkFooter" href="#">Cadastro</a>
-          <a class="lnkFooter" href="#">Fórum</a>
-        </div>
-        <div class="divCateg">
-          <a class="aCateg" id="aCatTit">Institucional</a>
-          <a class="lnkFooter" href="./sobreNos.html">Sobre Nós</a>
-          <a class="lnkFooter" href="./contato.html">Contato</a>
-          <a class="lnkFooter" href="./creditos.html">Créditos</a>
+    </section>
+  </main>
+  <!-- main @e  -->
+
+  <div class="divider--2"></div>
+
+  <!-- Footer @s -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h5 class="h5 footer-title">Redes sociais</h5>
+            <ul class="footer-menu">
+              <li class="footer-item">
+                <a href="#" class="footer-link" target="_blank">
+                  <i class="fi fi-brands-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link" target="_blank">
+                  <i class="fi fi-brands-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link" target="_blank">
+                  <i class="fi fi-brands-whatsapp"></i>
+                  WhatsApp
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link" target="_blank">
+                  <i class="fi fi-brands-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link" target="_blank">
+                  <i class="fi fi-brands-tik-tok"></i>
+                  TikTok
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h5 class="h5 footer-title">Juntos Para Brincar</h5>
+            <ul class="footer-menu">
+              <li class="footer-item">
+                <a href="#" class="footer-link">
+                  <i class="fi fi-sr-info"></i>
+                  Sobre Programa
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="./novoCadastro.html" class="footer-link">
+                  <i class="fi fi-sr-form"></i>
+                  Cadastro
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="./conviteCadastro.html" class="footer-link">
+                  <i class="fi fi-sr-users-alt"></i>
+                  Fórum
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h5 class="h5 footer-title">Institucional</h5>
+            <ul class="footer-menu">
+              <li class="footer-item">
+                <a href="./sobreNos.html" class="footer-link">
+                  <i class="fi fi-sr-star"></i>
+                  Sobre Nós
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="./contato.html" class="footer-link">
+                  <i class="fi fi-sr-phone-call"></i>
+                  Contato
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="./creditos.html" class="footer-link">
+                  <i class="fi fi-sr-face-smile-hearts"></i>
+                  Créditos
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer-belt">
+      <div class="container">
+        <p>Copyright © 2023 AtivaKids. Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer @e -->
+
+  <!-- Login modal @s -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h3">Login</h3>
+        <div class="close-btn" id="login-modal-close-btn">
+          <i class="fi fi-sr-circle-xmark"></i>
+        </div>
+      </div>
+      <form action="" id="login-form">
+        <div>
+          <div>
+            <label for="email" class="custom-label--2">Email:</label>
+            <input type="text" class="custom-input--2 mt-1 w-100 border-box" id="password" name="password"
+              placeholder="">
+            <a href="#"><small>Esqueci meu email</small></a>
+          </div>
+          <div class="mt-3">
+            <label for="password" class="custom-label--2">Senha:</label>
+            <input type="text" class="custom-input--2 mt-1 w-100 border-box" id="password" name="password"
+              placeholder="">
+            <a href="#"><small>Esqueci minha senha</small></a>
+          </div>
+        </div>
+        <div class="mt-3 d-flex justify-content-between">
+          <div>
+            <button class="custom-btn--2" id="login-btn">Entrar</button>
+          </div>
+          <div>
+            <button class="custom-btn--2">Fazer cadastro</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Login modal @e -->
+
+  <!-- Loading @s -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader"></div>
+  </div>
+  <!-- Loading @e -->
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+
 </html>

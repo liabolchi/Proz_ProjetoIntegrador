@@ -1,0 +1,11 @@
+.logo-box {
+  margin-top: -4em;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 25em;
+}

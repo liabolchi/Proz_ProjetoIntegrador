@@ -6,8 +6,8 @@
 */
 .divHeader{
     display: flex;
-    background-color:#0C67D6 ;
-    font-family: Comic Sans MS;
+    /* background-color:#0C67D6 ; */
+    /* font-family: Comic Sans MS; */
     font-size: small;
     justify-content: space-between;
 }
@@ -20,7 +20,7 @@
     height: 3em;
     list-style-type: none;
     overflow: hidden;
-    background-color: #0C67D6;
+    /* background-color: #0C67D6; */
     align-items: center;
 }
 
@@ -86,7 +86,7 @@
  /*                                Personalização - Menu Acesso                                     */
  /*-------------------------------------------------------------------------------------------------*/
 
- .divAcesso {
+ /* .divAcesso {
     .tit {
         font-family: Comic Sans MS;
         font-size: large;
@@ -95,11 +95,11 @@
 
     .dlgClose .bt {
         position:absolute;
-        /* right:5px;
-        top:5px; */
+        right:5px;
+        top:5px;
         background:none;
         color: white;
-        /* padding:5px 10px; */
+        padding:5px 10px;
         border:0;
         &:before {
         content: "\f00d";
@@ -131,7 +131,7 @@
         top: 20%;
         }
     }
-}
+} */
 
 .dlgAcesso {
     background: white;
@@ -161,7 +161,7 @@
     padding:10px;
     background-color:#0C67D6;
     color: white;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
 }
 
@@ -196,7 +196,7 @@
     color: #8FAADC;
     border:#F1BE2F solid 1px;
     font-size: small;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
 }
 
 .lnkRecAcesso{
@@ -250,26 +250,26 @@
 
 /*Personalização do logo e barra de pesquisa
 */
-.divLogo{
-    margin-top: -4em;
+/* .divLogo{
+    margin-top: -8em;
     padding-top: 3em;
     display:flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-.searchBar{
+/* .searchBar{
     display:flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 1.5em;
-}
+} */
 
-#imgLogo{
+/* #imgLogo{
     width:25em;
-}
+} */
 
-.inptSearch{
+/* .inptSearch{
     font-family: Comic Sans MS;
     font-size: small;
     color: #F1BE2F;
@@ -284,12 +284,12 @@
     width: 4%;
     padding-left: 1em;
     vertical-align: center;
-}
+} */
 
 /*Personalização do Corpo da Página
 */
 .divMain{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     
     display: flex;
@@ -309,7 +309,7 @@
 } */
 
 .navLnkOthers{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
 
     display: flex;
@@ -342,7 +342,7 @@
     padding: 0;
     margin-top: 5em;
     background-color:#0C67D6 ;
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     display: flex;
     flex-direction: row;
@@ -357,7 +357,7 @@
 }
 
 .aCateg{
-    font-family: Comic Sans MS;
+    /* font-family: Comic Sans MS; */
     font-size: small;
     color:white;
     text-align: left;

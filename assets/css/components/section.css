@@ -1,0 +1,7 @@
+#sobre-nos-section {
+  opacity: 0; /* Inicialmente, definimos a opacidade para 0 */
+  transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave para a opacidade */
+}
+#sobre-nos-section.show {
+  opacity: 1; /* Quando a classe 'show' for adicionada, a opacidade se torna 1 */
+}

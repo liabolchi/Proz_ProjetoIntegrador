@@ -1,0 +1,102 @@
+/**
+ * Search button
+ */
+.custom-form-box {
+  display: flex;
+  justify-content: center;
+}
+ 
+.custom-form-inner {
+  display: flex;
+}
+
+.custom-form-inner .custom-input {
+  color: var(--ak-gray900);
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: block;
+  padding: 12px 24px;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid var(--ak-gray300);
+  border-radius: 5rem;
+  transition: all .2s ease-in-out;
+}
+
+.custom-form-inner .custom-input:focus {
+  border-color: var(--ak-blue700);
+  outline: 0;
+}
+
+.custom-form-inner .custom-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 8px;
+  padding: 12px 24px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--ak-blue700);
+  transition: background-color .2s ease-in-out;
+}
+
+.custom-form-inner .custom-btn:disabled {
+  background-color: var(--ak-gray700);
+}
+
+.custom-form-inner .custom-btn:disabled:hover {
+  background-color: var(--ak-gray700);
+}
+
+.custom-form-inner .custom-btn i {
+  display: flex;
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+.custom-form-inner .custom-btn:hover {
+  background-color: var(--ak-blue900);
+}
+
+.custom-input--2 {
+  color: var(--ak-gray900);
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: block;
+  padding: 12px 24px;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid var(--ak-gray300);
+  border-radius: 5rem;
+  transition: all .2s ease-in-out;
+}
+
+.custom-input--2:focus {
+  border-color: var(--ak-blue700);
+  outline: 0;
+}
+
+.custom-btn--2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 12px 24px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--ak-blue700);
+  transition: background-color .2s ease-in-out;
+}
+
+.custom-btn--2:hover {
+  background-color: var(--ak-blue900);
+}

@@ -1,0 +1,145 @@
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: 2.5rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-size: 1.75rem;
+}
+
+.h4 {
+  font-size: 1.5rem;
+}
+
+.h5 {
+  font-size: 1.25rem;
+}
+
+.h6 {
+  font-size: 1rem;
+}
+
+.container {
+  margin-inline: auto;
+  padding: 0 12px;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px -12px;
+}
+
+.col-3 {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 6px 6px;
+}
+
+.col-4 {
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 6px 6px;
+}
+
+.btn-link {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+}
