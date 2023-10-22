@@ -1,5 +1,5 @@
 #sobre-nos-section {
-  opacity: 0; /* Inicialmente, definimos a opacidade para 0 */
+  opacity: 1; /* Inicialmente, definimos a opacidade para 0 */
   transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave para a opacidade */
 }
 #sobre-nos-section.show {

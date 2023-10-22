@@ -400,18 +400,18 @@
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    width: 50%;
+    width: 80%;
 }
 
 #imgBalao{
-    opacity: 0.2;
-    width: 70%;
-    height: 70%;
+   
+    width: 100%;
+    height: 100%;
 }
 
 .divImage{
     display: flex;
-    width: 50%;
+    width: 70%;
     height: 100%;
     justify-content: space-around;
     align-content: flex-start;

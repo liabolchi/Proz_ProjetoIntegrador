@@ -14,7 +14,7 @@ function showOnScroll(elementId) {
   function checkVisibility() {
     if (isElementVisible(element)) {
       element.classList.add('show'); // Adiciona a classe 'show' quando o elemento estiver visível
-      window.removeEventListener('scroll', checkVisibility); // Remove o evento de rolagem após a exibição
+       window.removeEventListener('scroll', checkVisibility); // Remove o evento de rolagem após a exibição
     }
   }
 
